@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js" defer></script>
+	<title>Cards</title>
+</head>
+<body>
+	<aside id="landing-page">
+		<details id="instructions">
+			<summary>Instructions</summary>
+			The 3 emojis on each card are a clue for an animated movie. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the movie name in easy mode, and a character/place in the movie in the challenging mode. You can make a maximum of 3 wrong matches. 
+		</details>
+		<label>Choose a category:
+			<select id="category">
+				<option value="Animated Movies">Animated Movies</option>
+			</select>
+			<br>
+			<div id="future">(More coming soon!)</div>			
+		</label>		
+		<label>Choose a difficulty mode:
+			<select id="difficulty-mode">
+				<option value="Easy">Easy</option>
+				<option value="Challenging">Challenging</option>
+			</select>			
+		</label>
+		<button id="play-btn">Play!</button>
+	</aside>
+	<main id="game-area">
+		<div id="name-shower">The card depicted: <span></span></div>
+		<div id="score-display">Score: <span id="score">0</span></div>
+		<div class="card-container" id="source">
+		</div>
+		<div class="card-container" id="destination">
+			<div id="card-drop-position"></div>
+		</div>
+		<div id="hints-display">Hints seen: <span id="hint">0</span></div>
+	</main>
+	<template id="cardTemplate">
+		<div class="card-wrapper" draggable="true">
+			<div class="card">
+				<div class="back-face">
+					<span class="hint"></span>
+				</div>
+				<div class="front-face">
+					<span class="primary"></span>
+					<div class="separator"></div>
+					<span class="secondary"></span>				
+				</div>
+			</div>
+		</div>
+	</template>
+</body>
+</html>
