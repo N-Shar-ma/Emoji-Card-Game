@@ -1,151 +1,14 @@
-let cardObjectsDeck = [
-{
-	name: "Frozen",
-	content: {primary: "❄️", secondary: "🏔️🚪"},
-	hint: "Has 2 female protagonists",
-	matchValue: "Arendelle",
-	seenHint: false
-},
-{
-	name: "Snow White and the Seven Dwarfs",
-	content: {primary: "🍎", secondary: "👸😗"},
-	hint: "Earliest animated feature film",
-	matchValue: "Dopey",
-	seenHint: false
-},
-{
-	name: "Zootopia",
-	content: {primary: "🐰", secondary: "👮‍♀️🦊"},
-	hint: "Shakira featured in a song",
-	matchValue: "Hopps",
-	seenHint: false
-},
-{
-	name: "The Lion King",
-	content: {primary: "🦁", secondary: "🐗🐦"},
-	hint: "Has a live action remake",
-	matchValue: "Pride Rock",
-	seenHint: false
-},
-{
-	name: "Moana",
-	content: {primary: "🌊", secondary: "🏝⛵"},
-	hint: "Based on Polynesian culture",
-	matchValue: "Motunui",
-	seenHint: false
-},
-{
-	name: "Finding Nemo",
-	content: {primary: "🐠", secondary: "🐟🌊"},
-	hint: "Protagonist has a slight deformity",
-	matchValue: "Great Barrier Reef",
-	seenHint: false
-},
-{
-	name: "Toy Story",
-	content: {primary: "🤠", secondary: "🤖🧒"},
-	hint: "Beginning of a franchise",
-	matchValue: "Andy",
-	seenHint: false
-},
-{
-	name: "Aladdin",
-	content: {primary: "🧞", secondary: "👳‍♀️🐒"},
-	hint: "Based on a middle eastern folk tale",
-	matchValue: "Jafar",
-	seenHint: false
-},
-{
-	name: "The Little Mermaid",
-	content: {primary: "🧜‍♀️", secondary: "🦵🗣️"},
-	hint: "Based on a Hans Christian Anderson tale",
-	matchValue: "Triton",
-	seenHint: false
-},
-{
-	name: "Inside Out",
-	content: {primary: "😄", secondary: "😔😡"},
-	hint: "The main characters are emotions",
-	matchValue: "Riley",
-	seenHint: false
-},
-{
-	name: "101 Dalmations",
-	content: {primary: "🐕", secondary: "⬛⬜"},
-	hint: "Has a live action remake",
-	matchValue: "Cruella",
-	seenHint: false
-},
-{
-	name: "Up",
-	content: {primary: "🎈", secondary: "🏡🐕"},
-	hint: "Protagonist is an elderly widower",
-	matchValue: "Paradise Falls",
-	seenHint: false
-},
-{
-	name: "Pinocchio",
-	content: {primary: "🤥", secondary: "👃🧚‍♀️"},
-	hint: "Protagonist transitions from puppet to boy",
-	matchValue: "Woodworker",
-	seenHint: false
-},
-{
-	name: "The Incredibles",
-	content: {primary: "🦸‍♂️", secondary: "🦸‍♀️🎭"},
-	hint: "Family of superheroes living as muggles 😉",
-	matchValue: "Elastigirl",
-	seenHint: false
-},
-{
-	name: "Dumbo",
-	content: {primary: "🐘", secondary: "🎪👂"},
-	hint: "Has a live action reimagining",
-	matchValue: "Mrs. Jumbo",
-	seenHint: false
-},
-{
-	name: "Sleeping Beauty",
-	content: {primary: "😴", secondary: "👸🧚"},
-	hint: "Has a sequel focussing on the villain",
-	matchValue: "Maleficient",
-	seenHint: false
-},
-{
-	name: "Beauty and the Beast",
-	content: {primary: "🌹", secondary: "👸👹"},
-	hint: "Female protagonist loved books",
-	matchValue: "Mrs. Potts",
-	seenHint: false
-},
-{
-	name: "Coco",
-	content: {primary: "💀", secondary: "🎸🐕"},
-	hint: "Inspired by a Mexican holiday",
-	matchValue: "Land of the Dead",
-	seenHint: false
-},
-{
-	name: "Tangled",
-	content: {primary: "💇‍♀️", secondary: "👸🌺"},
-	hint: "Based on Rapunzel",
-	matchValue: "Eugene Fitzherbert",
-	seenHint: false
-},
-{
-	name: "Onward",
-	content: {primary: "🧝‍♂️", secondary: "🧙👨‍👦‍👦"},
-	hint: "All elf characters have blue skin",
-	matchValue: "Wilden Lightfoot",
-	seenHint: false
-}
-];
+import { getInstructions, getShuffledDeck } from "./decks.js"
+
+let cardObjectsDeck = []
 
 let currentCardObjectsDeck = [];
 let wrongCardObjectsDeck = [];
 
 
 const landingPage = document.getElementById("landing-page");
+const instructions = document.getElementById("instructions");
+const category = document.getElementById("category");
 const difficultyMode = document.getElementById("difficulty-mode");
 const gameArea = document.getElementById("game-area");
 const playButton = document.getElementById("play-btn");
@@ -158,11 +21,15 @@ const score = document.getElementById("score");
 const hint = document.getElementById("hint");
 const maxCardsPlayable = 6;
 const maxCardsWrong = 3;
-const deckLength = cardObjectsDeck.length;
+let deckLength;
 let matcher;
 let showName;
 let scoreCount = 0;
 let hintCount = 0;
+
+chooseDeck()
+
+category.addEventListener("change", chooseDeck)
 
 playButton.addEventListener("click", setUpGame)
 
@@ -171,20 +38,16 @@ function setUpGame()
 	setDifficultyMode();
 	landingPage.remove();
 	gameArea.style.display = "flex";
-	shuffle(cardObjectsDeck);
-	addCard();
-	let i = 1;
-	let repeater = setInterval(()=>{
-		if(i === maxCardsPlayable)
-			clearInterval(repeater);
-		else
-		{
-			addCard();
-			i++;
-		}
-	}, 300);
+	addCardsOneByOne(300)
 	updateCardDropPosition();
 	setUpCardDropPositionEventListeners();
+}
+
+function chooseDeck ()
+{
+	cardObjectsDeck = getShuffledDeck(category.value);
+	deckLength = cardObjectsDeck.length
+	instructions.innerText = getInstructions(category.value)
 }
 
 function setDifficultyMode()
@@ -203,20 +66,25 @@ function setDifficultyMode()
 	}
 }
 
-function shuffle(deck)
-{
-	for(let i = deck.length - 1; i > 0; i--)
-	{
-		let j = Math.floor(Math.random() * (i + 1));
-		[deck[i], deck[j]] = [deck[j], deck[i]];
-	}
+function addCardsOneByOne (timeInterval) {
+	addCard();
+	let i = 1;
+	let repeater = setInterval(()=>{
+		if(i === maxCardsPlayable)
+			clearInterval(repeater);
+		else
+		{
+			addCard();
+			i++;
+		}
+	}, timeInterval);
 }
 
 function addCard()
 {
 	const cardDocumentFragment = cardTemplate.content.cloneNode(true);
 	const card = cardDocumentFragment.querySelector(".card");
-	cardObject = cardObjectsDeck.pop();
+	const cardObject = cardObjectsDeck.pop();
 	currentCardObjectsDeck.push(cardObject);
 	fillInCardDetails(card, cardObject);
 	card.addEventListener("click", flip);
@@ -232,6 +100,8 @@ function fillInCardDetails(card, cardObject)
 	const hint = card.querySelector(".hint");
 	primary.innerText = cardObject.content.primary;
 	secondary.innerText = cardObject.content.secondary;
+	if(!cardObject.content.primary) primary.remove()
+	if(!cardObject.content.secondary) secondary.remove()
 	hint.innerText = cardObject.hint;
 	card.dataset.name = cardObject.name;
 }
@@ -250,7 +120,7 @@ function setUpCardDragEventListeners(draggable)
 
 function flip()
 {
-	cardObject = getCorrespondingCardObject(this.dataset.name);
+	const cardObject = getCorrespondingCardObject(this.dataset.name);
 	if(cardObject.seenHint || wrongCardObjectsDeck.includes(cardObject))
 	{
 		this.classList.toggle("flipped");
@@ -343,7 +213,7 @@ function handleCardInDestination(card)
 
 function isCorrectMove(card) // temp body !!!
 {
-	cardObject = getCorrespondingCardObject(card.dataset.name);
+	const cardObject = getCorrespondingCardObject(card.dataset.name);
 	if(cardObject[matcher] === cardDropPosition.innerText)
 		return true;
 	return false;
@@ -388,7 +258,7 @@ function isDestinationFull()
 
 function showGameOver(won)
 {
-	msg = won? `🏆    You won!    🏆`: `😭    You lost!    😭`;
+	const msg = won? `🏆    You won!    🏆`: `😭    You lost!    😭`;
 	if(confirm(`${msg}
 
 Your score is ${scoreCount} and you took ${hintCount} hint${hintCount===1?"":"s"}.

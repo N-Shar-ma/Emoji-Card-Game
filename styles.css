@@ -71,12 +71,6 @@ body{
 	outline: none;
 }
 
-#future{
-	padding: 5px;
-	font-size: 0.7rem;
-	text-align: center;
-}
-
 main{
 	min-height: 100vh;
 	min-width: 100vw;	
@@ -306,7 +300,7 @@ main{
 .front-face{
 	background-color: salmon;
 	transform: rotateY(0deg);
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 .primary, .secondary{
@@ -318,16 +312,8 @@ main{
 }
 
 .secondary{
-	font-size: 2.2rem;
+	font-size: 2.5rem;
 }
-
-.separator{
-	background-color: black;
-	width: var(--card-width);
-	height: 4px;
-	position: absolute;
-	top: 64%;
-} 
 
 #card-drop-position{
 	height: var(--card-height);
