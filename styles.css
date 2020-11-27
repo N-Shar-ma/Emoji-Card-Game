@@ -2,23 +2,24 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: cursive;
+	font-family: inherit;
 }
 
 :root{
-/*	--card-height: 160px;*/
+	/*	--card-height: 160px;*/
 	--card-height: 35vh;
-/*	--card-width: 120px;*/
+	/*	--card-width: 120px;*/
 	--card-width: 12vw;
-/*	--card-border-radius: 10px;*/
+	/*	--card-border-radius: 10px;*/
 	--card-border-radius: 1vw;
 	--rotation: 0deg;
-/*	--card-shadow-color: black;*/
+	/*	--card-shadow-color: black;*/
 }
 
 html, body{
 	min-height: 100vh;
 	min-width: 100vw;
+	font-family: "BioRhyme", serif;
 }
 
 body{
