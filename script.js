@@ -288,7 +288,7 @@ function updateCardDropPosition()
 	setTimeout(()=>{
 		cardDropPosition.style.display = "flex";
 		cardDropPosition.classList.remove("dragged-over");
-		cardDropPosition.innerText = getRandomMatcher();
+		cardDropPosition.querySelector("#matcher").innerText = getRandomMatcher();
 	}, 2500);
 }
 
