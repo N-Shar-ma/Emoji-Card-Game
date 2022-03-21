@@ -327,7 +327,7 @@ echo $message;`,
             {
                 name: "Mahatma Gandhi",
                 content: {
-                    primary:" 👨🏾‍🦲👓"
+                    secondary:" 👨🏾‍🦲👓"
                 },
                 hint: "Bapu",
                 matchValue: `Be the change you wish to see in the world.`,
@@ -354,7 +354,7 @@ echo $message;`,
             {
                 name: "Rabindranath Tagore",
                 content: {
-                    primary: "🎅🏾✒️"
+                    secondary: "🎅🏾✒️"
                 },
                 hint: "Gurudev",
                 matchValue: `“Clouds come floating into my life, no longer to carry rain or usher storm, but to add color to my sunset sky.”`,
@@ -363,7 +363,7 @@ echo $message;`,
             {
                 name: "Rani of Jhansi",
                 content: {
-                    primary: "👸⚔️"
+                    secondary: "👸⚔️"
                 },
                 hint: "Manu",
                 matchValue: `If defeated and killed on the field of battle, we shall surely earn eternal glory and salvation`,
@@ -372,7 +372,8 @@ echo $message;`,
             {
                 name: "BR Ambedkar",
                 content: {
-                    primary: "🧑‍⚖️‍📝🤵"
+                    primary: "🤵",
+                    secondary: "🧑‍⚖️‍📝"
                 },
                 hint: "Baba Saheb",
                 matchValue: `They cannot make history who forget history`,
@@ -390,7 +391,7 @@ echo $message;`,
             {
                 name: "Abul Kalam Azad",
                 content: {
-                    primary: "🎅☪️️"
+                    secondary: "🎅☪️️"
                 },
                 hint: "Maulana",
                 matchValue: `As a child of God, I am greater than anything that can happen to me.`,
