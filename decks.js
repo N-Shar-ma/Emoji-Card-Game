@@ -319,6 +319,112 @@ echo $message;`,
                 seenHint: false
             }
         ]
+    },
+    {
+        name: "Freedom Fighters",
+        instructions: "The emoji/s on each card are a clue for a Freedom Fighter. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the nickname in easy mode, and a famous quote in the challenging mode. You can make a maximum of 3 wrong matches.",
+        cards: [
+            {
+                name: "Mahatma Gandhi",
+                content: {
+                    secondary:" 👨🏾‍🦲👓"
+                },
+                hint: "Bapu",
+                matchValue: `Be the change you wish to see in the world.`,
+                seenHint: false
+            },
+            {
+                name: "Bhagat Singh",
+                content: {
+                    secondary: "🤠🥆"
+                },
+                hint: "Sahid-e-Azam",
+                matchValue: `Inquilaab zindabaad!`,
+                seenHint: false
+            },
+            {
+                name: "Sardar Vallabhai Patel",
+                content: {
+                    secondary: "👴🏾🗿"
+                },
+                hint: "Iron Man of India",
+                matchValue: `My only desire is that India should be a god producer and no one should be hungry, shedding tears for food in the country.`,
+                seenHint: false
+            },
+            {
+                name: "Rabindranath Tagore",
+                content: {
+                    secondary: "🎅🏾✒️"
+                },
+                hint: "Gurudev",
+                matchValue: `“Clouds come floating into my life, no longer to carry rain or usher storm, but to add color to my sunset sky.”`,
+                seenHint: false
+            },
+            {
+                name: "Rani of Jhansi",
+                content: {
+                    secondary: "👸⚔️"
+                },
+                hint: "Manu",
+                matchValue: `If defeated and killed on the field of battle, we shall surely earn eternal glory and salvation`,
+                seenHint: false
+            },
+            {
+                name: "BR Ambedkar",
+                content: {
+                    primary: "🤵",
+                    secondary: "🧑‍⚖️‍📝"
+                },
+                hint: "Baba Saheb",
+                matchValue: `They cannot make history who forget history`,
+                seenHint: false
+            },
+            {
+                name: "Jawahar Lal Nehru",
+                content: {
+                    secondary: "🌾🔴🌹"
+                },
+                hint: "Chachaji",
+                matchValue: `We live in a wonderful world that is full of beauty, charm and adventure. There is no end to the adventures we can have if only we seek them with our eyes open.`,
+                seenHint: false
+            },
+            {
+                name: "Abul Kalam Azad",
+                content: {
+                    secondary: "🎅☪️️"
+                },
+                hint: "Maulana",
+                matchValue: `As a child of God, I am greater than anything that can happen to me.`,
+                seenHint: false
+            },
+            {
+                name: "Subhash Chandra Bose",
+                content: {
+                    primary: "🌕"
+                },
+                hint: "Netaji",
+                matchValue: `It is our duty to pay for our liberty with our own blood.`,
+                seenHint: false
+            },
+            {
+                name: "Sarojini Naidu",
+                content: {
+                    primary: "👵"
+                },
+                hint: "Nightingale of India",
+                matchValue: `We want deeper sincerity of motive, a greater courage in speech and earnestness in action.`,
+                seenHint: false
+            },
+            {
+                name: "Tipu Sultan",
+                content: {
+                    primary: "👑"
+                },
+                hint: "Tiger of Mysore",
+                matchValue: `It is far better to live like a lion for a day then to live like a jackal for hundred years.`,
+                seenHint: false
+            }
+        ]
     }
 ]
 
