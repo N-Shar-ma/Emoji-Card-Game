@@ -523,6 +523,102 @@ echo $message;`,
                 seenHint: false
             }
         ]
+    },
+    {
+        name: "Fruits",
+        instructions: "The emoji/s on each card are a clue for a fruit. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the fruit name in easy mode, and a fact of the food in the challenging mode. You can make a maximum of 3 wrong matches.",
+        cards:[
+            {
+                name: "Orange",
+                content: {
+                    primary: "O 🏃‍♂️ G", 
+                },
+                hint: "a colour",
+                matchValue: "Orange is a fruit and a color lol",
+                seenHint: false
+            },
+            {
+                name: "Pear",
+                content: {
+                    primary: "P 👂"
+                },
+                hint: "green color fruit",
+                matchValue: "it has about 100 calories",
+                seenHint: false
+            },
+            {
+                name: "Cherry",
+                content: {
+                    primary: "🪑 E"
+                },
+                hint: "japanese tree name has it",
+                matchValue: "A cherry tree can be harvested in 7 seconds",
+                seenHint: false
+            },
+            {
+                name: "Mango",
+                content: {
+                    primary: "👨 Go"
+                },
+                hint: "king of fruits",
+                matchValue: "Mangoes are related to cashews and pistachios",
+                seenHint: false
+            },
+            {
+                name: "Kiwi",
+                content: {
+                    primary: "🔑 V"
+                },
+                hint: "also a bird",
+                matchValue: "low in calories",
+                seenHint: false
+            },
+            {
+                name: "Strawberry",
+                content: {
+                    primary: "🥤🐻E"
+                },
+                hint: "first fruit to ripen in the spring",
+                matchValue: "it has 200 seeds on an average",
+                seenHint: false
+            },
+            {
+                name: "Blackberry",
+                content: {
+                    primary: "⚫🐻"
+                },
+                hint: "Superfood",
+                matchValue: "helps tightening of tissues",
+                seenHint: false
+            },
+            {
+                name: "Apple",
+                content: {
+                    primary: "A 💊"
+                },
+                hint: "- a day keeps doctor away",
+                matchValue: "Apple juice was one of the earliest prescribed antidepressants",
+                seenHint: false
+            },
+            {
+                name: "Banana",
+                content: {
+                    primary: "👵❌ ❌ "
+                },
+                hint: "has no seeds",
+                matchValue: "it is considered as a berry",
+                seenHint: false
+            },
+            {
+                name: "Pineapple",
+                content: {
+                    primary: "🌲🍎"
+                },
+                hint: "it regenerates",
+                matchValue: "it ripens faster upside down",
+                seenHint: false
+            }
+        ]
     }
 ]
 
