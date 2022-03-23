@@ -531,7 +531,7 @@ echo $message;`,
             {
                 name: "Orange",
                 content: {
-                    primary: "O 🏃‍♂️ G", 
+                    secondary: "O🏃‍♂️G", 
                 },
                 hint: "a colour",
                 matchValue: "Orange is a fruit and a color lol",
@@ -540,7 +540,7 @@ echo $message;`,
             {
                 name: "Pear",
                 content: {
-                    primary: "P 👂"
+                    secondary: "P👂"
                 },
                 hint: "green color fruit",
                 matchValue: "it has about 100 calories",
@@ -549,7 +549,7 @@ echo $message;`,
             {
                 name: "Cherry",
                 content: {
-                    primary: "🪑 E"
+                    secondary: "🪑E"
                 },
                 hint: "japanese tree name has it",
                 matchValue: "A cherry tree can be harvested in 7 seconds",
@@ -558,7 +558,7 @@ echo $message;`,
             {
                 name: "Mango",
                 content: {
-                    primary: "👨 Go"
+                    secondary: "👨Go"
                 },
                 hint: "king of fruits",
                 matchValue: "Mangoes are related to cashews and pistachios",
@@ -567,7 +567,7 @@ echo $message;`,
             {
                 name: "Kiwi",
                 content: {
-                    primary: "🔑 V"
+                    secondary: "🔑V"
                 },
                 hint: "also a bird",
                 matchValue: "low in calories",
@@ -576,7 +576,7 @@ echo $message;`,
             {
                 name: "Strawberry",
                 content: {
-                    primary: "🥤🐻E"
+                    secondary: "🥤🐻E"
                 },
                 hint: "first fruit to ripen in the spring",
                 matchValue: "it has 200 seeds on an average",
@@ -585,7 +585,7 @@ echo $message;`,
             {
                 name: "Blackberry",
                 content: {
-                    primary: "⚫🐻"
+                    secondary: "⚫🐻"
                 },
                 hint: "Superfood",
                 matchValue: "helps tightening of tissues",
@@ -594,7 +594,7 @@ echo $message;`,
             {
                 name: "Apple",
                 content: {
-                    primary: "A 💊"
+                    secondary: "A💊"
                 },
                 hint: "- a day keeps doctor away",
                 matchValue: "Apple juice was one of the earliest prescribed antidepressants",
@@ -603,7 +603,7 @@ echo $message;`,
             {
                 name: "Banana",
                 content: {
-                    primary: "👵❌ ❌ "
+                    secondary: "👵❌❌ "
                 },
                 hint: "has no seeds",
                 matchValue: "it is considered as a berry",
@@ -612,7 +612,7 @@ echo $message;`,
             {
                 name: "Pineapple",
                 content: {
-                    primary: "🌲🍎"
+                    secondary: "🌲🍎"
                 },
                 hint: "it regenerates",
                 matchValue: "it ripens faster upside down",
