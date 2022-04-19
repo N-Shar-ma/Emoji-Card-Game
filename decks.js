@@ -619,6 +619,111 @@ echo $message;`,
                 seenHint: false
             }
         ]
+    },
+    {
+        name: "Marvel Heroes",
+        instructions: "The emoji/s on each card are a clue for a hero from the Marvel universe. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the superhero's alias in easy mode, and their real name in the challenging mode. You can make a maximum of 3 wrong matches.",
+        cards: [
+            {
+                name: "Ant Man",
+                content: {
+                    primary: "🐜👨🏻"
+                },
+                hint: "Can change his size on will",
+                matchValue: `Scott Lang`,
+                seenHint: false
+            },
+            {
+                name: "Hawkeye",
+                content: {
+                    secondary: "🦅👁"
+                },
+                hint: "Shoots arrows and never misses :)",
+                matchValue: `Clint Barton`,
+                seenHint: false
+            },
+            {
+                name: "Captain America",
+                content: {
+                    secondary: "🛡️👨🏻‍✈🇺🇸"
+                },
+                hint: "He can do this all day",
+                matchValue: `Steve Rogers`,
+                seenHint: false
+            },
+            {
+                name: "Spider Man",
+                content: {
+                    primary: "🕷️👨🏻"
+                },
+                hint: "A radioactive insect bit him",
+                matchValue: `Peter Parker`,
+                seenHint: false
+            },
+            {
+                name: "Ghost Rider",
+                content: {
+                    primary: "👻🚵"
+                },
+                hint: "He has his head on fire!",
+                matchValue: `Roberto Reyes`,
+                seenHint: false
+            },
+            {
+                name: "Starlord",
+                content: {
+                    primary: "⭐👑"
+                },
+                hint: "(Self-proclaimed)Leader of the Guardians of the Galaxy",
+                matchValue: `Peter Quill`,
+                seenHint: false
+            },
+            {
+                name: "Silver Surfer",
+                content: {
+                    secondary: "🥈🏄"
+                },
+                hint: "Member of the fantastic four",
+                matchValue: `Norrin Radd`,
+                seenHint: false
+            },
+            {
+                name: "Rocket Raccoon",
+                content: {
+                    primary: "🚀🦝"
+                },
+                hint: "Is NOT a teddy bear!!  >:(",
+                matchValue: `89P13`,
+                seenHint: false
+            },
+            {
+                name: "Deadpool",
+                content: {
+                    primary: "😵🏊"
+                },
+                hint: "Has regenerative abilities",
+                matchValue: `Wade Wilson`,
+                seenHint: false
+            },
+            {
+                name: "Iron Man",
+                content: {
+                    primary: "🦾🧔🏻"
+                },
+                hint: "Love you 3000",
+                matchValue: `Tony Stark`,
+                seenHint: false
+            },
+            {
+                name: "Black Panther",
+                content: {
+                    primary: "⚫🐅"
+                },
+                hint: "Wakanda Forever",
+                matchValue: `T'Challa`,
+                seenHint: false
+            }
+        ]
     }
 ]
 
