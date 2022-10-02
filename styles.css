@@ -119,7 +119,7 @@ main{
 	font-style: italic;
 }
 
-#score-display, #hints-display{
+#score-display, #hints-display, #deck-author-display {
 	position: absolute;
 	left: 75vw;
 	transform: translateX(-50%) translateY(-50%);
@@ -130,6 +130,19 @@ main{
 	border-radius: 5px;
 	padding: 3px;
 	z-index: 10;
+}
+
+#deck-author-display {
+    left: 50vw;
+    top: 97vh;
+}
+
+#deck-author-display a{
+    text-decoration: none;
+	color: red;
+}
+#deck-author-display a:hover{
+    text-decoration: underline;
 }
 
 #score-display{

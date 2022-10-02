@@ -18,3 +18,27 @@ Would love PRs adding more decks of cards! Any fun SFW topic is welcome! Detaile
 This project is not looking for any feature enhancements right now, so any issues you create for anything apart from new decks will be closed, at least for the meanwhile. 
 
 But you may want to keep an eye out for any issues created by me for specific tasks that I would appreciate help with!
+
+
+If you do add a deck, be sure to add an author field to your deck in deck.js so your name can be shown!
+
+### Boilerplate for Adding Deck:
+```javascript
+    {
+        name: "[Your Topic]",
+        author: "[Your Github Name]",
+        instructions: "[Deck Instructions]",
+        cards: [
+            {
+                nseename: "[Card Name]",
+                content: {
+                    primary: "[Emoji 1]",
+                    secondary: "[Emoji 2]",
+                },
+                hint: "[Helpful Hint]",
+                matchValue: "[Associated Value]",
+                seenHint: false,
+            },
+            {...},
+        ]
+```
