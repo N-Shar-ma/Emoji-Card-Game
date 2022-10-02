@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=BioRhyme:400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js" type="module"></script>
-    <title>Emoji Cards Game</title>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=BioRhyme:400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js" type="module"></script>
+	<title>Emoji Cards Game</title>
 </head>
-
 <body>
-    <aside id="landing-page">
-        <details>
-            <summary>Instructions</summary>
-            <p id="instructions">
-            </p>
-        </details>
-        <label>Choose a category:
-            <select id="category">
-                <option value="Animated Movies">Animated Movies</option>
-                <option value="Coding Languages">Coding Languages</option>
-                <option value="Freedom Fighters">Freedom Fighters</option>
-                <option value="States and UT">States & UTs</option>
-                <option value="Fruits">Fruits</option>
-                <option value="Rock Bands">Rock Bands</option>
-                <option value="Marvel Heroes">Marvel Heroes</option>
-            </select>
-            <br>
-        </label>
-        <label>Choose a difficulty mode:
-            <select id="difficulty-mode">
-                <option value="Easy">Easy</option>
-                <option value="Challenging">Challenging</option>
-            </select>
-        </label>
-        <button id="play-btn">Play!</button>
-    </aside>
-    <main id="game-area">
-        <div id="name-shower">The card depicted: <span></span></div>
-        <div id="score-display">Score: <span id="score">0</span></div>
-        <div class="card-container" id="source">
-        </div>
-        <div class="card-container" id="destination">
-            <div id="card-drop-position">
-                <div id="matcher"></div>
-            </div>
-        </div>
-        <div id="hints-display">Hints seen: <span id="hint">0</span></div>
-        <div id="deck-author-display">Deck Created by: <span id="author"></span></div>
-
-    </main>
-    <template id="cardTemplate">
-        <div class="card-wrapper" draggable="true">
-            <div class="card">
-                <div class="back-face">
-                    <span class="hint"></span>
-                </div>
-                <div class="front-face">
-                    <span class="primary"></span>
-                    <span class="secondary"></span>
-                </div>
-            </div>
-        </div>
-    </template>
+	<aside id="landing-page">
+		<h1 id="title-text">Emoji Card Game</h1>
+		<details>
+			<summary>Instructions</summary>
+			<p id="instructions">
+			</p>
+		</details>
+		<label>Choose a category:
+			<select id="category">
+				<option value="Animated Movies">Animated Movies</option>
+				<option value="Coding Languages">Coding Languages</option>
+				<option value="Freedom Fighters">Freedom Fighters</option>
+				<option value="States and UT">States & UTs</option>
+				<option value="Fruits">Fruits</option>
+				<option value="Rock Bands">Rock Bands</option>
+				<option value="Marvel Heroes">Marvel Heroes</option>
+			</select>
+			<br>
+		</label>		
+		<label>Choose a difficulty mode:
+			<select id="difficulty-mode">
+				<option value="Easy">Easy</option>
+				<option value="Challenging">Challenging</option>
+			</select>			
+		</label>
+		<button id="play-btn">Play!</button>
+		<a id="footer" href="https://github.com/N-Shar-ma/Emoji-Card-Game"><i>leave a ⭐ on GitHub!</i></a>
+	</aside>
+	<main id="game-area">
+		<div id="name-shower">The card depicted: <span></span></div>
+		<div id="score-display">Score: <span id="score">0</span></div>
+		<div class="card-container" id="source">
+		</div>
+		<div class="card-container" id="destination">
+			<div id="card-drop-position">
+				<div id="matcher"></div>
+			</div>
+		</div>
+		<div id="hints-display">Hints seen: <span id="hint">0</span></div>
+        <div id="deck-author-display">Deck Created by: <a id="author" href="#" target=blank_></a></div>
+	</main>
+	<template id="cardTemplate">
+		<div class="card-wrapper" draggable="true">
+			<div class="card">
+				<div class="back-face">
+					<span class="hint"></span>
+				</div>
+				<div class="front-face">
+					<span class="primary"></span>
+					<span class="secondary"></span>				
+				</div>
+			</div>
+		</div>
+	</template>
 </body>
-
 </html>
+        

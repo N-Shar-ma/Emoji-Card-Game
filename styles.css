@@ -120,9 +120,16 @@ main{
 }
 
 #deck-author-display {
-    position: absolute;
     left: 50vw;
     top: 97vh;
+}
+
+#deck-author-display a{
+    text-decoration: none;
+	color: red;
+}
+#deck-author-display a:hover{
+    text-decoration: underline;
 
 }
 
