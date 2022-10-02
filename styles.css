@@ -130,7 +130,6 @@ main{
 }
 #deck-author-display a:hover{
     text-decoration: underline;
-
 }
 
 #score-display{
@@ -140,7 +139,6 @@ main{
 #hints-display{
 	top: 85vh;
 }
-
 
 .card-container{
 	position: relative;

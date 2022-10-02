@@ -847,6 +847,7 @@ export function getShuffledDeck(category) {
 export function getAuthor(category) {
   return decks.find((deck) => deck.name === category).author;
 }
+
 export function getInstructions(category) {
   return decks.find((deck) => deck.name === category).instructions;
 }

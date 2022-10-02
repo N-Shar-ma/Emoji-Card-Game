@@ -48,7 +48,7 @@ function chooseDeck() {
     cardObjectsDeck = getShuffledDeck(category.value);
     deckLength = cardObjectsDeck.length
     instructions.innerText = getInstructions(category.value)
-    author = getAuthor(category.value)
+    const author = getAuthor(category.value)
     authorName.innerText = author
     //Only change href if we have text in the author field
     if (author != "") {
