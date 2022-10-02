@@ -62,10 +62,11 @@ body{
 #title-text {
 	font-family: 'Mali', cursive;
 	font-size: 3.5rem;
+	text-align: center;
 }
 
 #footer {
-	margin-top: -1.25rem;
+	margin-top: -1rem;
 	text-decoration: none;
 	color: black;
 	font-family: 'Mali', cursive;
