@@ -106,7 +106,7 @@ main{
 	font-style: italic;
 }
 
-#score-display, #hints-display{
+#score-display, #hints-display, #deck-author-display {
 	position: absolute;
 	left: 75vw;
 	transform: translateX(-50%) translateY(-50%);
@@ -119,6 +119,13 @@ main{
 	z-index: 10;
 }
 
+#deck-author-display {
+    position: absolute;
+    left: 50vw;
+    top: 97vh;
+
+}
+
 #score-display{
 	top: 15vh;
 }
@@ -126,6 +133,7 @@ main{
 #hints-display{
 	top: 85vh;
 }
+
 
 .card-container{
 	position: relative;

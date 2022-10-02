@@ -6,7 +6,7 @@ const decks = [
             "The emoji/s on each card are a clue for an animated movie. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the movie name in easy mode, and a character/place in the movie in the challenging mode. You can make a maximum of 3 wrong matches.",
         cards: [
             {
-                name: "Frozen",
+                nseename: "Frozen",
                 content: {
                     primary: "❄️",
                     secondary: "🏔️🚪",
@@ -843,7 +843,9 @@ export function getShuffledDeck(category) {
     }
     return cardDeck;
 }
-
+export function getAuthor(category) {
+    return decks.find((deck) => deck.name === category).author;
+}
 export function getInstructions(category) {
     return decks.find((deck) => deck.name === category).instructions;
 }
