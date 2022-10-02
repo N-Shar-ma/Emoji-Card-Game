@@ -825,6 +825,103 @@ echo $message;`,
                 seenHint: false
             }
         ]
+    },
+    {
+        name: "Sports",
+        instructions: "The emoji/s on each card are hints for the sport. You can flip (click) the card to view additional clues. Drag and drop the card onto the matching text clue on the right, which will alias the sport name in easy mode. You can make a maximum of 3 wrong matches.",
+        cards: [
+            {
+                name: "Archery",
+                content: {
+                    secondary: "R🍒"
+                },
+                hint: "More than the bow and arrows.",
+                matchValue: `bow and arrow`,
+                seenHint: false
+            },
+            {
+                name: "Football",
+                content: {
+                    secondary: "🦶⚽"
+                },
+                hint: "11 Players, 1 Heartbeat.",
+                matchValue: `goooaaalll!`,
+                seenHint: false
+            },
+            {
+                name: "Cricket",
+                content: {
+                    secondary: "😭😺"
+                },
+                hint: "bat and ball game played",
+                matchValue: `Batting Gloves and batting helmet`,
+                seenHint: false
+            },
+            {
+                name: "Golf",
+                content: {
+                    secondary: "⭕F"
+                },
+                hint: "Hit it long",
+                matchValue: `put the ball in the hole`,
+                seenHint: false
+            },
+            {
+                name: "Horse race",
+                content: {
+                    secondary: "🐴🏁"
+                },
+                hint: "equestrian performance sport, typically involving two or more horses ridden by jockeys",
+                matchValue: `using horse`,
+                seenHint: false
+            },
+            {
+                name: "Boxing",
+                content: {
+                    secondary: "🎁NG"
+                },
+                hint: "trying to punch their opponent with padded gloves on their fists",
+                matchValue: `fighting, K.O.`,
+                seenHint: false
+            },
+            {
+                name: "Handball",
+                content: {
+                    secondary: "✋⚽"
+                },
+                hint: "pass a ball using their hands",
+                matchValue: `into the goal with their hand`,
+                seenHint: false
+            },
+            {
+                name: "Basket ball",
+                content: {
+                    secondary: "🧺⚽"
+                },
+                hint: "tries to score by tossing the ball through the basket",
+                matchValue: `b-ball`,
+                seenHint: false
+            },
+            {
+                name: "Tennis",
+                content: {
+                    secondary: "🕙S"
+                },
+                hint: "strike a hollow rubber ball covered with felt over a net and into the opponent's court",
+                matchValue: `Life sized ping pong`,
+                seenHint: false
+            },
+            {
+                name: "Badminton",
+                content: {
+                    primary: "👎",
+                    secondary: "⛏️10"
+                },
+                hint: " hit a shuttlecock across a net",
+                matchValue: `battledore and shuttlecock`,
+                seenHint: false
+            },
+        ]
     }
 ]
 
