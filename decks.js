@@ -528,6 +528,15 @@ echo $message;`,
                 hint: "The Niagara Falls of India is here",
                 matchValue: `Bastar is located here`,
                 seenHint: false
+            },
+            {
+              name: "West Bengal",
+              content: {
+                secondary: "👈🐟"
+              },
+              hint: "Fish is the most famous type of meat here",
+              matchValue: `Victoria Memorial is located here`,
+              seenHint: false
             }
         ]
     },
