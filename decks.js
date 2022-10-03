@@ -529,6 +529,7 @@ echo $message;`,
                 matchValue: `Bastar is located here`,
                 seenHint: false
             }
+            
         ]
     },
     {
@@ -625,7 +626,16 @@ echo $message;`,
                 hint: "it regenerates",
                 matchValue: "it ripens faster upside down",
                 seenHint: false
-            }
+            },
+            {
+              name: "Peach",
+              content: {
+                  secondary: "🍑"
+              },
+              hint: "Fresh southern georgia ...",
+              matchValue: "Has only 70 calories",
+              seenHint: false
+          }
         ]
     },
     {
