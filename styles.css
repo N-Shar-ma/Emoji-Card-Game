@@ -29,6 +29,12 @@ body{
 	background-color: orange;
 }
 
+#particles-js{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
 #landing-page{
 	background-color: rgba(255, 255, 255, 0.5);
 	width: 35vw;
@@ -40,6 +46,7 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	box-shadow: 0px 0px 5px 1px black;
+	z-index:1;
 }
 
 #play-btn{
