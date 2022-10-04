@@ -205,6 +205,16 @@ const decks = [
         matchValue: "Wilden Lightfoot",
         seenHint: false,
       },
+       {
+        name: "Lilo & Stitch",
+        content: {
+          primary: "👽",
+          secondary: "🏝🧍‍♀️",
+        },
+        hint: "Has 1 female protagonist and 1 Experiment in Hawaii",
+        matchValue: "Daveigh Chase",
+        seenHint: false,
+      },
     ],
   },
   {
