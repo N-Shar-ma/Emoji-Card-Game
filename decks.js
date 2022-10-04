@@ -205,6 +205,16 @@ const decks = [
         matchValue: "Wilden Lightfoot",
         seenHint: false,
       },
+       {
+        name: "Lilo & Stitch",
+        content: {
+          primary: "👽",
+          secondary: "🏝🧍‍♀️",
+        },
+        hint: "Has 1 female protagonist and 1 Experiment in Hawaii",
+        matchValue: "Daveigh Chase",
+        seenHint: false,
+      },
     ],
   },
   {
@@ -725,6 +735,16 @@ echo $message;`,
                 matchValue: "Singer - Anthony Kiedis\nGuitarist - John Frusciante",
                 seenHint: false,
             },
+            {
+                name: "Nirvana",
+                content: {
+                    primary: "👶🌊",
+                    secondary: "🙂",
+                },
+                hint: "Musical style has been mainly described as grunge, alternative rock, punk rock, and hard rock",
+                matchValue: "Singer - Kurt Cobain\nGuitarist - Kurt Cobain",
+                seenHint: false,
+            }
         ],
       },
     {
@@ -829,6 +849,24 @@ echo $message;`,
                 },
                 hint: "Wakanda Forever",
                 matchValue: `T'Challa`,
+                seenHint: false
+            },
+          {
+                name: "Thor",
+                content: {
+                    secondary: "🔨⚡️"
+                },
+                hint: "God of Thunder",
+                matchValue: `Thor Odinson`,
+                seenHint: false
+            },
+          {
+                name: "Moonknight",
+                content: {
+                    secondary: "🌙🥷"
+                },
+                hint: "Worked in the Natural History Museum in London",
+                matchValue: `Mark Spector`,
                 seenHint: false
             }
         ]
