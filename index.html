@@ -7,9 +7,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="script.js" type="module"></script>
+	<script src="script.js" type="module"></script>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script>
+		particlesJS.load('particles-js', 'particles.json', function () {
+		console.log('callback - particles.js config loaded');
+		});
+	</script>
 	<title>Emoji Cards Game</title>
 </head>
 <body>
+	<div id="particles-js"></div>
 	<aside id="landing-page">
 		<h1 id="title-text">Emoji Card Game</h1>
 		<details>
