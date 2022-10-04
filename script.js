@@ -1,4 +1,4 @@
-import { getInstructions, getShuffledDeck } from "./decks.js"
+import { getAuthor, getInstructions, getShuffledDeck } from "./decks.js"
 
 let cardObjectsDeck = []
 
@@ -10,6 +10,7 @@ const landingPage = document.getElementById("landing-page");
 const instructions = document.getElementById("instructions");
 const category = document.getElementById("category");
 const difficultyMode = document.getElementById("difficulty-mode");
+const authorName = document.getElementById("author")
 const gameArea = document.getElementById("game-area");
 const playButton = document.getElementById("play-btn");
 const nameShower = document.getElementById("name-shower");
@@ -43,12 +44,18 @@ function setUpGame()
 	setUpCardDropPositionEventListeners();
 }
 
-function chooseDeck ()
-{
-	cardObjectsDeck = getShuffledDeck(category.value);
-	deckLength = cardObjectsDeck.length
-	instructions.innerText = getInstructions(category.value)
+function chooseDeck() {
+    cardObjectsDeck = getShuffledDeck(category.value);
+    deckLength = cardObjectsDeck.length
+    instructions.innerText = getInstructions(category.value)
+    const author = getAuthor(category.value)
+    authorName.innerText = author
+    //Only change href if we have text in the author field
+    if (author != "") {
+        authorName.href = "https://github.com/" + author
+    }
 }
+
 
 function setDifficultyMode()
 {
