@@ -835,8 +835,8 @@ echo $message;`,
                 content: {
                     secondary: "R🍒"
                 },
-                hint: "More than the bow and arrows.",
-                matchValue: `bow and arrow`,
+                hint: "Main equipment includes bow, arrows, and targets",
+                matchValue: `The first olympic sport to allow female competitors`,
                 seenHint: false
             },
             {
@@ -844,8 +844,8 @@ echo $message;`,
                 content: {
                     secondary: "🦶⚽"
                 },
-                hint: "11 Players, 1 Heartbeat.",
-                matchValue: `goooaaalll!`,
+                hint: "Main equipment include Cleats or turfs, Socks, Shin Guards, and Soccer Ball",
+                matchValue: `It is played by 250 million players in over 200 countries, making it the world's most popular sport`,
                 seenHint: false
             },
             {
@@ -853,17 +853,8 @@ echo $message;`,
                 content: {
                     secondary: "😭😺"
                 },
-                hint: "bat and ball game played",
-                matchValue: `Batting Gloves and batting helmet`,
-                seenHint: false
-            },
-            {
-                name: "Golf",
-                content: {
-                    secondary: "⭕F"
-                },
-                hint: "Hit it long",
-                matchValue: `put the ball in the hole`,
+                hint: "Main equipment include Bat, Batting Leg-Guards, Batting Gloves, Body Protector, Abdominal Protector, and batting helmet",
+                matchValue: `111 is widely considered to be an unlucky score`,
                 seenHint: false
             },
             {
@@ -871,8 +862,8 @@ echo $message;`,
                 content: {
                     secondary: "🐴🏁"
                 },
-                hint: "equestrian performance sport, typically involving two or more horses ridden by jockeys",
-                matchValue: `using horse`,
+                hint: "Main equipment include horse, Whip, and jockeys",
+                matchValue: `Racing is The Sport of Kings`,
                 seenHint: false
             },
             {
@@ -880,17 +871,8 @@ echo $message;`,
                 content: {
                     secondary: "🎁NG"
                 },
-                hint: "trying to punch their opponent with padded gloves on their fists",
-                matchValue: `fighting, K.O.`,
-                seenHint: false
-            },
-            {
-                name: "Handball",
-                content: {
-                    secondary: "✋⚽"
-                },
-                hint: "pass a ball using their hands",
-                matchValue: `into the goal with their hand`,
+                hint: "Main equipment include Wrist Wrap, Gloves, Mouth Guard, and Footwear",
+                matchValue: `The official name is pugilism`,
                 seenHint: false
             },
             {
@@ -898,8 +880,8 @@ echo $message;`,
                 content: {
                     secondary: "🧺⚽"
                 },
-                hint: "tries to score by tossing the ball through the basket",
-                matchValue: `b-ball`,
+                hint: "Main equipment include ball and ring",
+                matchValue: `It was initially played with a football`,
                 seenHint: false
             },
             {
@@ -907,8 +889,8 @@ echo $message;`,
                 content: {
                     secondary: "🕙S"
                 },
-                hint: "strike a hollow rubber ball covered with felt over a net and into the opponent's court",
-                matchValue: `Life sized ping pong`,
+                hint: "Main equipment include Racket, Ball, and Net",
+                matchValue: `Before the ball was yellow, it was white`,
                 seenHint: false
             },
             {
@@ -917,8 +899,8 @@ echo $message;`,
                     primary: "👎",
                     secondary: "⛏️10"
                 },
-                hint: " hit a shuttlecock across a net",
-                matchValue: `battledore and shuttlecock`,
+                hint: "Main equipment include Racket, Shuttlecock, and Net",
+                matchValue: `The fastest racquet sport in the world`,
                 seenHint: false
             },
         ]
