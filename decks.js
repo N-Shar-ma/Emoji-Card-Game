@@ -870,6 +870,85 @@ echo $message;`,
                 seenHint: false
             }
         ]
+    },
+    {
+        name: "Sports",
+        instructions: "The emoji/s on each card are hints for the sport. You can flip (click) the card to view additional clues. Drag and drop the card onto the matching text clue on the right, which will alias the sport name in easy mode. You can make a maximum of 3 wrong matches.",
+        cards: [
+            {
+                name: "Archery",
+                content: {
+                    secondary: "R🍒"
+                },
+                hint: "Main equipment includes bow, arrows, and targets",
+                matchValue: `The first olympic sport to allow female competitors`,
+                seenHint: false
+            },
+            {
+                name: "Football",
+                content: {
+                    secondary: "🦶⚽"
+                },
+                hint: "Main equipment include Cleats or turfs, Socks, Shin Guards, and Soccer Ball",
+                matchValue: `It is played by 250 million players in over 200 countries, making it the world's most popular sport`,
+                seenHint: false
+            },
+            {
+                name: "Cricket",
+                content: {
+                    secondary: "😭😺"
+                },
+                hint: "Main equipment include Bat, Batting Leg-Guards, Batting Gloves, Body Protector, Abdominal Protector, and batting helmet",
+                matchValue: `111 is widely considered to be an unlucky score`,
+                seenHint: false
+            },
+            {
+                name: "Horse race",
+                content: {
+                    secondary: "🐴🏁"
+                },
+                hint: "Main equipment include horse, Whip, and jockeys",
+                matchValue: `Racing is The Sport of Kings`,
+                seenHint: false
+            },
+            {
+                name: "Boxing",
+                content: {
+                    secondary: "🎁NG"
+                },
+                hint: "Main equipment include Wrist Wrap, Gloves, Mouth Guard, and Footwear",
+                matchValue: `The official name is pugilism`,
+                seenHint: false
+            },
+            {
+                name: "Basket ball",
+                content: {
+                    secondary: "🧺⚽"
+                },
+                hint: "Main equipment include ball and ring",
+                matchValue: `It was initially played with a football`,
+                seenHint: false
+            },
+            {
+                name: "Tennis",
+                content: {
+                    secondary: "🕙S"
+                },
+                hint: "Main equipment include Racket, Ball, and Net",
+                matchValue: `Before the ball was yellow, it was white`,
+                seenHint: false
+            },
+            {
+                name: "Badminton",
+                content: {
+                    primary: "👎",
+                    secondary: "⛏️10"
+                },
+                hint: "Main equipment include Racket, Shuttlecock, and Net",
+                matchValue: `The fastest racquet sport in the world`,
+                seenHint: false
+            },
+        ]
     }
 ]
 
