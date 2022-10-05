@@ -871,7 +871,104 @@ echo $message;`,
             }
         ]
     }
-]
+],
+       {
+        name: "CEO of company",
+        author: "Surabhi",
+        instructions: "The emoji/s on each card are a clue for a CEO of a company. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the fruit name in easy mode, and a fact of the food in the challenging mode. You can make a maximum of 3 wrong matches.",
+        cards:[
+            {
+                name: "Satya Nadella",
+                content: {
+                    secondary: "🙋‍♀️crow🧈", 
+                },
+                hint: "The answer is related to Bill Gates.",
+                matchValue: "He is the executive chairman and CEO of Microsoft, succeeding Steve Ballmer in 2014 as CEO",
+                seenHint: false
+            },
+            {
+                name: "Sundar Pichai",
+                content: {
+                    secondary: "👓🔎"
+                },
+                hint: "You use a search engine everyday",
+                matchValue: "He is the chief executive officer (CEO) of Alphabet Inc. and its subsidiary Google",
+                seenHint: false
+            },
+            {
+                name: "Mark Zuckerberg",
+                content: {
+                    secondary: "😊📖"
+                },
+                hint: "Taken over an important app you use.",
+                matchValue: "Mark Elliot Zuckerberg is an American business magnate, internet entrepreneur, and philanthropist",
+                seenHint: false
+            },
+            {
+                name: "Andrew Jassy",
+                content: {
+                    secondary: "😮🔛"
+                },
+                hint: "Shop, window shop",
+                matchValue: "Andrew R. Jassy is an American business executive who has been the president and chief executive officer (CEO) of Amazon since 2021.",
+                seenHint: false
+            },
+            {
+                name: "Ola Källenius",
+                content: {
+                    secondary: "🌡️©️🇩🇿"
+                },
+                hint: "We all dream of owning this car",
+                matchValue: "He is the chairman of the board of management of Mercedes-Benz Group, and CEO of Mercedes-Benz.",
+                seenHint: false
+            },
+            {
+                name: "Parag Agarwal",
+                content: {
+                    secondary: "🍵w😢"
+                },
+                hint: "We all love the bird emoji",
+                matchValue: "He is an Indian-American software engineer who is the chief executive officer (CEO) of Twitter, Inc.",
+                seenHint: false
+            },
+            {
+                name: "Shantanu Narayen",
+                content: {
+                    secondary: "🅰️🐕🇧🇪"
+                },
+                hint: "PDF viewer, reader, digital signature",
+                matchValue: "He has been the chairman, president, and chief executive officer (CEO) of Adobe Inc. since December 2007.",
+                seenHint: false
+            },
+            {
+                name: "Tim Cook",
+                content: {
+                    secondary: "A💊"
+                },
+                hint: "- a day keeps doctor away",
+                matchValue: "Timothy Donald Cook (born November 1, 1960) is an American business executive who has been the chief executive officer of Apple Inc. since 2011",
+                seenHint: false
+            },
+            {
+                name: "Arvind Krishna",
+                content: {
+                    secondary: "👁️🇧🇲"
+                },
+                hint: "Business machines",
+                matchValue: "Arvind Krishna is an Indian-American business executive serving as the Chairman and CEO of IBM. He has been the CEO of IBM since April 2020 and took on the role of Chairman in January 2021",
+                seenHint: false
+            },
+            {
+                name: "Leena Nair",
+                content: {
+                    secondary: "🍵🚱"
+                },
+                hint: "French luxury fashion house",
+                matchValue: "She is a British-Indian business executive who is the Global CEO of Chanel",
+                seenHint: false
+            }
+        ]
+    },
 
 export function getShuffledDeck(category) {
   const cardDeck = decks.find((deck) => deck.name === category).cards;
