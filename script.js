@@ -13,6 +13,7 @@ const difficultyMode = document.getElementById("difficulty-mode");
 const authorName = document.getElementById("author")
 const gameArea = document.getElementById("game-area");
 const playButton = document.getElementById("play-btn");
+const homeButton = document.getElementById("home-btn");
 const nameShower = document.getElementById("name-shower");
 const nameToShow = document.querySelector("#name-shower span"); 
 const cardDropPosition = document.getElementById("card-drop-position");
@@ -33,6 +34,8 @@ chooseDeck()
 category.addEventListener("change", chooseDeck)
 
 playButton.addEventListener("click", setUpGame)
+
+homeButton.addEventListener("click", goHome)
 
 function setUpGame()
 {
@@ -309,4 +312,9 @@ function removeFromCurrentDeck(card)
 {
 	const index = currentCardObjectsDeck.findIndex(cardObject=>card.dataset.name === cardObject.name);
 	currentCardObjectsDeck.splice(index, 1);
+}
+
+function goHome()
+{
+	location.reload();
 }
