@@ -832,6 +832,97 @@ echo $message;`,
                 seenHint: false
             }
         ]
+    },
+    {
+        name: "Fantasy Fiction Books",
+        author: "kat-kan",
+        instructions:
+            "The emoji/s on each card are a clue for a fantasy fiction book. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the book or saga name in easy mode, and a character/place in the book in the challenging mode. You can make a maximum of 3 wrong matches.",
+        cards: [
+            {
+                name: "Harry Potter and the Philosopher's Stone\n(Harry Potter Saga)",
+                content: {
+                    secondary: "⚡ 🧙",
+                },
+                hint: "The boy who lived",
+                matchValue: "Hermione Granger",
+                seenHint: false,
+            },
+            {
+                name: "The Fellowship of the Ring\n(Lord of the Rings saga)",
+                content: {
+                    secondary: "🧝‍ 💍",
+                },
+                hint: "This book is largely concerned with hobbits",
+                matchValue: "Frodo Baggins",
+                seenHint: false,
+            }
+            ,
+            {
+                name: "Alice's Adventures in Wonderland",
+                content: {
+                    secondary: "🐇 🕛",
+                },
+                hint: "DRINK ME",
+                matchValue: "The Cheshire Cat",
+                seenHint: false,
+            }
+            ,
+            {
+                name: "The Colour of Magic",
+                content: {
+                    secondary: "🌈 🧙",
+                },
+                hint: "This wizard never finished the Unseen University",
+                matchValue: "Rincewind",
+                seenHint: false,
+            },
+            {
+                name: "The Twilight",
+                content: {
+                    secondary: "🍎 🧛",
+                },
+                hint: "How long have you been seventeen?",
+                matchValue: "Edward Cullen",
+                seenHint: false,
+            },
+            {
+                name: "Eragon",
+                content: {
+                    secondary: "🐉 🥚",
+                },
+                hint: "A story about 15 year old boy who became a dragon rider",
+                matchValue: "Saphira",
+                seenHint: false,
+            },
+            {
+                name: "A Game of Thrones",
+                content: {
+                    secondary: "🧊 🩸",
+                },
+                hint: "This saga is known for killing many characters",
+                matchValue: "John Snow",
+                seenHint: false,
+            },
+            {
+                name: "Blood of Elves\n(The Witcher Saga)",
+                content: {
+                    secondary: "🐺 🗡️",
+                },
+                hint: "The main character's love smells like lilac and gooseberries",
+                matchValue: "Geralt from Rivia",
+                seenHint: false,
+            },
+            {
+                name: "The Hunger Games",
+                content: {
+                    secondary: "🐦 🏹",
+                },
+                hint: "12 districts, 24 volunteers",
+                matchValue: "Katniss Everdeen",
+                seenHint: false,
+            }
+        ]
     }
 ]
 
