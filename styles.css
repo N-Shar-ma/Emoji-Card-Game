@@ -119,7 +119,10 @@ main{
 	font-style: italic;
 }
 
-#score-display, #hints-display, #deck-author-display {
+
+
+
+#score-display, #hints-display,#hints-left, #deck-author-display {
 	position: absolute;
 	left: 75vw;
 	transform: translateX(-50%) translateY(-50%);
@@ -150,6 +153,10 @@ main{
 }
 
 #hints-display{
+	top: 80vh;
+}
+
+#hints-left{
 	top: 85vh;
 }
 

@@ -3,7 +3,7 @@ const decks = [
     name: "Animated Movies",
     author: "N-Shar-ma",
     instructions:
-      "The emoji/s on each card are a clue for an animated movie. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the movie name in easy mode, and a character/place in the movie in the challenging mode. You can make a maximum of 3 wrong matches.",
+      "The emoji/s on each card are a clue for an animated movie. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the movie name in easy mode, and a character/place in the movie in the challenging mode. You can make a maximum of 3 wrong matches and you have total 3 hints.",
     cards: [
       {
         name: "Frozen",
@@ -221,7 +221,7 @@ const decks = [
     name: "Coding Languages",
     author: "N-Shar-ma",
     instructions:
-      "The emoji/s on each card are a clue for a programming language. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the coding language name in easy mode, and a couple lines of code in that language in the challenging mode. You can make a maximum of 3 wrong matches.",
+      "The emoji/s on each card are a clue for a programming language. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the coding language name in easy mode, and a couple lines of code in that language in the challenging mode. You can make a maximum of 3 wrong matches and you have total 3 hints.",
     cards: [
       {
         name: "Java",
@@ -338,7 +338,7 @@ echo $message;`,
     {
         name: "Freedom Fighters",
         author: "AlphaGaurav7",
-        instructions: "The emoji/s on each card are a clue for a Freedom Fighter. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the nickname in easy mode, and a famous quote in the challenging mode. You can make a maximum of 3 wrong matches.",
+        instructions: "The emoji/s on each card are a clue for a Freedom Fighter. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the nickname in easy mode, and a famous quote in the challenging mode. You can make a maximum of 3 wrong matches and you have total 3 hints.",
         cards: [
             {
                 name: "Mahatma Gandhi",
@@ -445,7 +445,7 @@ echo $message;`,
     {
         name: "States and UT",
         author: "KarthikS373",
-        instructions: "The emoji/s on each card are clues for a state of UT. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the States and UTs name in easy mode, and a fact about the State / UTin the challenging mode. You can make a maximum of 3 wrong matches.",
+        instructions: "The emoji/s on each card are clues for a state of UT. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the States and UTs name in easy mode, and a fact about the State / UTin the challenging mode. You can make a maximum of 3 wrong matches and you have total 3 hints.",
         cards: [
             {
                 name: "Andaman and Nicobar",
@@ -544,7 +544,7 @@ echo $message;`,
     {
         name: "Fruits",
         author: "divya-nshi",
-        instructions: "The emoji/s on each card are a clue for a fruit. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the fruit name in easy mode, and a fact of the food in the challenging mode. You can make a maximum of 3 wrong matches.",
+        instructions: "The emoji/s on each card are a clue for a fruit. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the fruit name in easy mode, and a fact of the food in the challenging mode. You can make a maximum of 3 wrong matches and you have total 3 hints and you have total 3 hints.",
         cards:[
             {
                 name: "Orange",
@@ -642,7 +642,7 @@ echo $message;`,
         name: "Rock Bands",
         author: "SameepAher",
         instructions:
-          "The emoji/s on each card are a clue for an English Rock Band (Mostly old). You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the rock band name in easy mode, and name of some band members in the challenging mode. You can make a maximum of 3 wrong matches.",
+          "The emoji/s on each card are a clue for an English Rock Band (Mostly old). You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the rock band name in easy mode, and name of some band members in the challenging mode. You can make a maximum of 3 wrong matches and you have total 3 hints.",
         cards: [
             {
                 name: "Guns N' Roses",
@@ -750,7 +750,7 @@ echo $message;`,
     {
         name: "Marvel Heroes",
         author: "Ilikepizza2",
-        instructions: "The emoji/s on each card are a clue for a hero from the Marvel universe. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the superhero's alias in easy mode, and their real name in the challenging mode. You can make a maximum of 3 wrong matches.",
+        instructions: "The emoji/s on each card are a clue for a hero from the Marvel universe. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the superhero's alias in easy mode, and their real name in the challenging mode. You can make a maximum of 3 wrong matches and you have total 3 hints.",
         cards: [
             {
                 name: "Ant Man",

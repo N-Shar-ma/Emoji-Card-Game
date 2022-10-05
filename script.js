@@ -20,6 +20,7 @@ const source = document.getElementById("source");
 const destination = document.getElementById("destination");
 const score = document.getElementById("score");
 const hint = document.getElementById("hint");
+const hintLeft = document.getElementById("hints")
 const maxCardsPlayable = 6;
 const maxCardsWrong = 3;
 let deckLength;
@@ -27,6 +28,7 @@ let matcher;
 let showName;
 let scoreCount = 0;
 let hintCount = 0;
+let hints=3;
 
 chooseDeck()
 
@@ -128,16 +130,21 @@ function setUpCardDragEventListeners(draggable)
 function flip()
 {
 	const cardObject = getCorrespondingCardObject(this.dataset.name);
-	if(cardObject.seenHint || wrongCardObjectsDeck.includes(cardObject))
+	if(hints==0 && !cardObject.seenHint){
+		alert("Hints are over");
+	}
+	else if(cardObject.seenHint || wrongCardObjectsDeck.includes(cardObject))
 	{
 		this.classList.toggle("flipped");
 	}
-	else if(!cardObject.seenHint && confirm("Are you sure you want to see a hint?"))
+	else if(!cardObject.seenHint && confirm("Are you sure you want to see a hint?") && hints>0)
 	{
 		updateHintElement(++hintCount);
+		updateHintleft(--hints)
 		cardObject.seenHint = true;
 		this.classList.toggle("flipped");
 	}
+	
 }
 
 function getCorrespondingCardObject(name)
@@ -229,6 +236,11 @@ function isCorrectMove(card) // temp body !!!
 function updateScoreElement(scoreCount)
 {
 	score.innerText = scoreCount;
+}
+
+function updateHintleft(hintleft)
+{
+    hintLeft.innerText = hints;
 }
 
 function updateHintElement(hintCount)
