@@ -874,7 +874,7 @@ echo $message;`,
 ],
        {
         name: "CEO of company",
-        author: "Surabhi",
+        author: "Girlwithasmile",
         instructions: "The emoji/s on each card are a clue for a CEO of a company. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the fruit name in easy mode, and a fact of the food in the challenging mode. You can make a maximum of 3 wrong matches.",
         cards:[
             {
