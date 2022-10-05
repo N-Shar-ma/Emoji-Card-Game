@@ -1017,7 +1017,7 @@ echo $message;`,
               content: {
                   secondary: "👽🔥"
               },
-              hint: "He can read your mind but afraid of fire",
+              hint: "He can read your mind but is afraid of fire",
               matchValue: `J'onn J'onzz`,
               seenHint: false
           },
