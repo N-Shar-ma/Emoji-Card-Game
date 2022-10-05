@@ -39,7 +39,7 @@ body{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	box-shadow: 0px 0px 5px 1px black;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.518);
 }
 
 #play-btn{
@@ -49,14 +49,14 @@ body{
 	padding: 5px 15px;
 	font-size: 2rem;
 	border-radius: var(--card-border-radius);
-	box-shadow: 2px 2px 3px 1px black;
+	box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.518);
 	transition: 300ms;
 }
 
 #play-btn:hover{
 	background-color: orange;
 	color: white;
-	box-shadow: 1px 1px 2px 1px black;
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.518);
 }
 
 #title-text {
@@ -66,7 +66,6 @@ body{
 }
 
 #footer {
-	margin-top: -1rem;
 	text-decoration: none;
 	color: black;
 	font-family: 'Mali', cursive;
@@ -123,7 +122,7 @@ main{
 	position: absolute;
 	left: 75vw;
 	transform: translateX(-50%) translateY(-50%);
-	background-color: hsla(0, 0%, 100%, 0.7);
+	background-color: hsla(0, 0%, 100%, 1);
 	font-size: 1.2rem;
 	color: red;
 	border: 2px solid red;
@@ -166,7 +165,7 @@ main{
 	align-items: center;
 	border: 5px solid var(--container-border-color);
 	border-radius: calc(2 * var(--card-border-radius));
-	box-shadow: 5px 5px 10px 5px black;
+	box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.318);
 }
 
 #source{
@@ -202,7 +201,7 @@ main{
 	transform-style: preserve-3d;
 	transform: rotateY(var(--rotation) );
 	transition: transform 500ms ease-in-out;
-	box-shadow: 0px 0px 15px 5px var(--card-shadow-color, rgba(0, 0, 0, 0));
+	box-shadow: 0px 0px 15px 5px var(--card-shadow-color, rgba(0, 0, 0, 0.518));
 }
 
 .card.flipped{
