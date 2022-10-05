@@ -961,7 +961,122 @@ echo $message;`,
                 seenHint: false,
             }
         ]
-    }
+    },
+    {
+      name: "DC Heroes",
+      author: "thevinitgupta",
+      instructions: "The emoji/s on each card are a clue for a hero from the DC universe. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the superhero's alias in easy mode, and their real name in the challenging mode. You can make a maximum of 3 wrong matches.",
+      cards: [
+          {
+              name: "Batman",
+              content: {
+                  secondary: "🦇👨🏻"
+              },
+              hint: "Works in the night",
+              matchValue: `Bruce Wayne`,
+              seenHint: false
+          },
+          {
+              name: "Superman",
+              content: {
+                  secondary: "💪👦"
+              },
+              hint: "An alien who works at the Daily Planet",
+              matchValue: `Clark Kent`,
+              seenHint: false
+          },
+          {
+              name: "Flash",
+              content: {
+                  secondary: "⚡🏃‍♂️"
+              },
+              hint: "Can beat you at a race",
+              matchValue: `Barry Allen`,
+              seenHint: false
+          },
+          {
+              name: "Aquaman",
+              content: {
+                  secondary: "🌊🤴"
+              },
+              hint: "He is a Hybrid",
+              matchValue: `Arthur Curry`,
+              seenHint: false
+          },
+          {
+              name: "Green Lantern",
+              content: {
+                  secondary: "🟩🏮"
+              },
+              hint: "In brightest day, in blackest night, no evil...",
+              matchValue: `Hal Jordan`,
+              seenHint: false
+          },
+          {
+              name: "Martian Manhunter",
+              content: {
+                  secondary: "👽🔥"
+              },
+              hint: "He can read your mind but afraid of fire",
+              matchValue: `J'onn J'onzz`,
+              seenHint: false
+          },
+          {
+              name: "Wonder Woman",
+              content: {
+                  secondary: "👸⚔"
+              },
+              hint: "Princess of the Amazons",
+              matchValue: `Diana Prince`,
+              seenHint: false
+          },
+          {
+              name: "Green Arrow",
+              content: {
+                  secondary: "🏹🟩"
+              },
+              hint: "He's another genius billionaire like Batman",
+              matchValue: `Oliver Queen`,
+              seenHint: false
+          },
+          {
+              name: "Constantine",
+              content: {
+                  secondary: "👻🗣"
+              },
+              hint: "Can talk to dead people",
+              matchValue: `John Constantine`,
+              seenHint: false
+          },
+          {
+              name: "Shazam",
+              content: {
+                  secondary: "🧙‍♂️🌩"
+              },
+              hint: "He's a kid in a man's body",
+              matchValue: `Billy Batson`,
+              seenHint: false
+          },
+          {
+              name: "Blue Beetle",
+              content: {
+                  secondary: "🐞🟦"
+              },
+              hint: "He has a bio mechanical armour blue in color",
+              matchValue: `Jamie Reyes`,
+              seenHint: false
+          },
+        {
+              name: "Beast Boy",
+              content: {
+                  secondary: "🧟‍♂️🦍"
+              },
+              hint: "He's the coolest kid around and transforms in animals",
+              matchValue: `Garfield Logan`,
+              seenHint: false
+          },
+      ]
+  },
 ]
 
 export function getShuffledDeck(category) {
