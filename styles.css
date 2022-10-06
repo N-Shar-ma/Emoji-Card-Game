@@ -69,7 +69,7 @@ body{
 	color: grey;
 	border: 2px solid grey;
 	border-radius: 5px;
-	padding: 3px;
+	padding: 0 3px;
 	cursor: pointer;
 }
 
