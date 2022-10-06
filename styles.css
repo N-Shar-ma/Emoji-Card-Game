@@ -122,7 +122,7 @@ main{
 	position: absolute;
 	left: 75vw;
 	transform: translateX(-50%) translateY(-50%);
-	background-color: hsla(0, 0%, 100%, 1);
+	background-color: hsla(0, 0%, 100%, 0.7);
 	font-size: 1.2rem;
 	color: red;
 	border: 2px solid red;
@@ -134,6 +134,7 @@ main{
 #deck-author-display {
     left: 50vw;
     top: 97vh;
+	background-color: hsla(0, 0%, 100%, 1);
 }
 
 #deck-author-display a{
