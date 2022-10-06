@@ -59,6 +59,20 @@ body{
 	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.518);
 }
 
+#home-btn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 1.2vw;
+	background-color: hsla(0, 0%, 100%, 0.7);
+	font-size: 1.2rem;
+	color: grey;
+	border: 2px solid grey;
+	border-radius: 5px;
+	padding: 0 3px;
+	cursor: pointer;
+}
+
 #title-text {
 	font-family: 'Mali', cursive;
 	font-size: 3.5rem;
