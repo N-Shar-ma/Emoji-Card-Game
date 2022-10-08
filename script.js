@@ -142,7 +142,6 @@ function flip()
 			cancelBtnText: "No",
 			confirmBtnText: "Yes",
 			onConfirm : () => {
-				console.log("called")
 				updateHintElement(++hintCount);
 				cardObject.seenHint = true;
 				this.classList.toggle("flipped");

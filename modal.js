@@ -27,7 +27,6 @@ function defaultCancelCallback() {
 
 // Function to show the modal
 function showModal(title, content, options) {
-    console.log('called')
     // Load the default options
     options = {
         cancelBtnText: "Cancel",
@@ -82,7 +81,5 @@ elements.container.addEventListener('animationend', () => {
         elements.container.style.display = 'none'
     }
 })
-
-window.modal = showModal;
 
 export default { show: showModal };

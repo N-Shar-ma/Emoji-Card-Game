@@ -430,7 +430,7 @@ Display will be set to none for the hidden state using javascript.
 
 @keyframes modal-fadeout {
 	0% { opacity: 1; }
-	100% { opacity: 0;display: none !important; }
+	100% { opacity: 0; }
 }
 
 #modal-overlay {
