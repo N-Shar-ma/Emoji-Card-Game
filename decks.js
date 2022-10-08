@@ -1080,7 +1080,7 @@ echo $message;`,
   {
     name: "Harry Potter Characters",
         author: "Ni-vik",
-        instructions: "The emojis on each card represent a character from the Harry Potter Universe. You have to drag and drop ",
+        instructions: "The emojis on each card represent a character from the Harry Potter Universe. You can flip(click) the card and see a hint.Drag and drop a card onto the matching text clue on the right, which is character's name in easy mode and some info regarding character in challengening mode.",
         cards: [
             {
                 name: "George Weasley",
