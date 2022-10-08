@@ -1077,6 +1077,103 @@ echo $message;`,
           },
       ]
   },
+  {
+    name: "Harry Potter Characters",
+        author: "Ni-vik",
+        instructions: "The emojis on each card represent a character from the Harry Potter Universe. You can flip(click) the card and see a hint.Drag and drop a card onto the matching text clue on the right, which is character's name in easy mode and some info regarding character in challengening mode.",
+        cards: [
+            {
+                name: "George Weasley",
+                content: {
+                    primary: "🦅",
+                    secondary: "❌👂",
+                },
+                hint: "Saint-like",
+                matchValue: "Identical twin brother of Fred Weasley",
+                seenHint: false,
+            },
+            {
+                name: "Severus Snape",
+                content: {
+                    primary: "🩸",
+                    secondary: "🐍🦌",
+                },
+                hint: "Always",
+                matchValue: "Member of both the death eaters and the order of the phoenix",
+                seenHint: false,
+            },
+            {
+                name: "Hermoine Granger",
+                content: {
+                    primary: "📚",
+                    secondary: "🐱🦅",
+                },
+                hint: "Muggle-born in Harry's Year",
+                matchValue: "Prefect and co-founder of the Dumbledore's army",
+                seenHint: false,
+            },
+            {
+                name: "Ron Weasley",
+                content: {
+                    primary: "🕷",
+                    secondary: "🐭🦅",
+                },
+                hint: "Scabbers",
+                matchValue: "Padma Patil's date for Yule Ball",
+                seenHint: false,
+            },
+            {
+                name: "Draco Malfoy",
+                content: {
+                    primary: "💰",
+                    secondary: "🐍🧹",
+                },
+                hint: "Nimbus 2001",
+                matchValue: "Attacked by the hippogriff,Buckbeak",
+                seenHint: false,
+            },
+            {
+                name: "Sirius Black",
+                content: {
+                    primary: "🐶",
+                    secondary: "◾🦅",
+                },
+                hint: "prisoner of azkaban",
+                matchValue: "He was named godfather of Harry",
+                seenHint: false,
+            },
+            {
+                name: "Albus Dumbledore",
+                content: {
+                    primary: "💯",
+                    secondary: "🦅👨‍🏫",
+                },
+                hint: "100 points to gryffindor",
+                matchValue: "Defeated Gellert Grindelwald in the global wizarding war",
+                seenHint: false,
+            },
+            {
+                name: "Harry Potter",
+                content: {
+                    primary: "⚡",
+                    secondary: "🦉🦅",
+                },
+                hint: "Chosen one",
+                matchValue: "Becomes master of death in dealthly hallows",
+                seenHint: false,
+            },
+            {
+                name: "Lord Voldemort",
+                content: {
+                    primary: "7️⃣",
+                    secondary: "👃🐍",
+                },
+                hint: "You-Know-Who",
+                matchValue: "Tom Marvolo Riddle",
+                seenHint: false,
+            },
+        ]
+  },
 ]
 
 export function getShuffledDeck(category) {
