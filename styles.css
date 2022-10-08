@@ -394,3 +394,96 @@ main{
 	border-color: hsl(120, 100%, 25%);
 	opacity: 1;
 }
+
+/*
+Excluding the container in its hidden state from this rule might appear
+counter-intuitive, but it is required for the animation to work correctly.
+Display will be set to none for the hidden state using javascript.
+*/
+#modal-container:not(.hidden) {
+	opacity: 0;
+	display: none;
+}
+
+#modal-container, #modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000;
+}
+
+#modal-container.visible {
+	display: block;
+	animation: modal-fadein 300ms ease-out 1 forwards;
+}
+
+#modal-container.hidden {
+	animation: modal-fadeout 300ms ease-out 1 forwards;
+}
+
+@keyframes modal-fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes modal-fadeout {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+#modal-overlay {
+	background-color: rgba(0, 0, 0, 0.518);
+	backdrop-filter: blur(2px);
+}
+
+#modal-box{
+	width: fit-content;
+	max-width: 60vw;
+	min-width: 300px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: orange;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+	border-radius: calc(2 * var(--card-border-radius));
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.318);
+	padding: 16px;
+	z-index: 1001;
+}
+
+#modal-title {
+	font-family: 'Mali', cursive;
+	font-size: 2rem;
+	text-align: center;
+	margin: 8px 0;
+}
+
+#modal-content {
+	margin: 8px 0;
+}
+
+#modal-actions {
+	display: flex;
+	justify-content: end;
+}
+
+#modal-confirm, #modal-cancel{
+	border: none;
+	background-color: white;
+	color: orange;
+	padding: 5px 15px;
+	border-radius: calc(var(--card-border-radius) / 2);
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.518);
+	transition: 300ms;
+	margin: 0 8px;
+}
+
+#modal-confirm:hover, #modal-cancel:hover{
+	background-color: orange;
+	color: white;
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.518);
+	cursor: pointer;
+}
