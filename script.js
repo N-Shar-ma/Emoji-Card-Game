@@ -1,4 +1,5 @@
 import { getAuthor, getInstructions, getShuffledDeck } from "./decks.js"
+import modal from "./modal.js";
 
 let cardObjectsDeck = []
 
@@ -135,11 +136,18 @@ function flip()
 	{
 		this.classList.toggle("flipped");
 	}
-	else if(!cardObject.seenHint && confirm("Are you sure you want to see a hint?"))
+	else if(!cardObject.seenHint)
 	{
-		updateHintElement(++hintCount);
-		cardObject.seenHint = true;
-		this.classList.toggle("flipped");
+		modal.show("Hint Confirmation", "Are you sure you want to see a hint?", {
+			cancelBtnText: "No",
+			confirmBtnText: "Yes",
+			onConfirm : () => {
+				console.log("called")
+				updateHintElement(++hintCount);
+				cardObject.seenHint = true;
+				this.classList.toggle("flipped");
+			}
+		})
 	}
 }
 
@@ -269,14 +277,16 @@ function isDestinationFull()
 function showGameOver(won)
 {
 	const msg = won? `🏆    You won!    🏆`: `😭    You lost!    😭`;
-	if(confirm(`${msg}
-
-Your score is ${scoreCount} and you took ${hintCount} hint${hintCount===1?"":"s"}.
-
-${won? getAchievement() : ""}Select ok to play again!`))
-	{
-		location.reload();
-	}
+	modal.show(
+		msg,
+		`Your score is ${scoreCount} and you took ${hintCount} hint${hintCount===1?"":"s"}.
+${won? getAchievement() : ""}Select ok to play again!`,
+		{
+			showCancelBtn: false,
+			confirmBtnText: "OK",
+			onConfirm: () => window.location.reload()
+		}
+	)
 }
 
 function getAchievement()
