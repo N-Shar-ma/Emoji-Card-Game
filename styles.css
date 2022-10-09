@@ -34,10 +34,7 @@ body{
 #landing-page{
 	background-color: rgba(255, 255, 255, 0.5);
 	width: 90vw;
-	max-width: 400px;
 	height: 65vh;
-	min-height: 420px;
-	max-height: 500px;
 	padding: 10px;
 	border-radius: calc(2 * var(--card-border-radius));
 	display: flex;
