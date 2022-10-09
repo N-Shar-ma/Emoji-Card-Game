@@ -33,7 +33,7 @@ body{
 
 #landing-page{
 	background-color: rgba(255, 255, 255, 0.5);
-	width: 90vw;
+	width: 35vw;
 	height: 65vh;
 	padding: 10px;
 	border-radius: calc(2 * var(--card-border-radius));
