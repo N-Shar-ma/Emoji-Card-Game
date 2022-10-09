@@ -8,8 +8,10 @@
 :root{
 	/*	--card-height: 160px;*/
 	--card-height: 35vh;
+	--card-height-small: 20vh;
 	/*	--card-width: 120px;*/
 	--card-width: 12vw;
+	--card-width-small : 25vw;
 	/*	--card-border-radius: 10px;*/
 	--card-border-radius: 1vw;
 	--rotation: 0deg;
@@ -31,8 +33,11 @@ body{
 
 #landing-page{
 	background-color: rgba(255, 255, 255, 0.5);
-	width: 35vw;
+	width: 90vw;
+	max-width: 400px;
 	height: 65vh;
+	min-height: 420px;
+	max-height: 500px;
 	padding: 10px;
 	border-radius: calc(2 * var(--card-border-radius));
 	display: flex;
@@ -379,4 +384,67 @@ main{
 #card-drop-position.dragged-over::after{
 	border-color: hsl(120, 100%, 25%);
 	opacity: 1;
+}
+
+
+@media screen and (max-width : 860px){
+	main{
+		flex-direction: column;
+		justify-content: center;
+		gap : 15px;
+	}
+	.card-container{
+		width: 90vw;
+		grid-template-columns: repeat(3, var(--card-width-small));
+		/* grid-gap: 20px; */
+	}
+	#source{
+		height: 50vh;
+		grid-template-rows: repeat(2, var(--card-height-small));
+	}
+	#destination{
+		height: 30vh;
+		grid-template-rows: repeat(2, var(--card-height-small));
+	}
+	#score-display{
+		top : 4vh;
+		left: 20vw;
+	}
+	#hints-display{
+		top : 4vh;
+	}
+	#deck-author-display{
+		width: 60vw;
+		text-align: center;
+	}
+	.card-wrapper{
+		height: 20vh;
+		width: 22vw;
+	}
+	#card-drop-position{
+		height: 20vh;
+		width: 22vw;
+	}
+}
+
+
+@media screen and (max-width : 520px){
+	#source{
+		height: 45vh;
+	}
+	#destination{
+		height: 25vh;
+	}
+	.card-wrapper{
+		height: 20vh;
+		width: 26vw;
+	}
+	.primary{
+		font-size: 3.5rem;
+	}
+	
+	.secondary{
+		font-size: 2rem;
+	}
+	
 }
