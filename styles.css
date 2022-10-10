@@ -398,7 +398,16 @@ main{
 }
 
 
+@media screen and (max-width : 1110px){
+	#landing-page{
+		width: 45vw;
+	}
+}
+
 @media screen and (max-width : 860px){
+	#landing-page{
+		width: 65vw;
+	}
 	main{
 		flex-direction: column;
 		justify-content: center;
@@ -443,6 +452,9 @@ main{
 
 
 @media screen and (max-width : 520px){
+	#landing-page{
+		width: 80vw;
+	}
 	.card-wrapper{
 		height: 20vh;
 		width: 26vw;
