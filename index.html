@@ -29,6 +29,8 @@
 				<option value="Rock Bands">Rock Bands</option>
 				<option value="Marvel Heroes">Marvel Heroes</option>
 				<option value="Fantasy Fiction Books">Fantasy Fiction Books</option>
+				<option value="DC Heroes">DC Heroes</option>
+				<option value="Harry Potter Characters">Harry Potter Characters</option>
 			</select>
 			<br>
 		</label>		
@@ -42,6 +44,7 @@
 		<a id="footer" href="https://github.com/N-Shar-ma/Emoji-Card-Game"><i>leave a ⭐ on GitHub!</i></a>
 	</aside>
 	<main id="game-area">
+		<button id="home-btn">back</button>
 		<div id="name-shower">The card depicted: <span></span></div>
 		<div id="score-display">Score: <span id="score">0</span></div>
 		<div class="card-container" id="source">
@@ -52,7 +55,7 @@
 			</div>
 		</div>
 		<div id="hints-display">Hints seen: <span id="hint">0</span></div>
-        <div id="deck-author-display">Deck Created by: <a id="author" href="#" target=blank_></a></div>
+		<div id="deck-author-display">Deck Created by: <a id="author" href="#" target=blank_></a></div>
 	</main>
 	<template id="cardTemplate">
 		<div class="card-wrapper" draggable="true">
@@ -67,6 +70,17 @@
 			</div>
 		</div>
 	</template>
+	<div id="modal-container">
+		<div id="modal-overlay"></div>
+		<div id="modal-box">
+			<h1 id="modal-title"></h1>
+			<p id="modal-content"></p>
+			<div id="modal-actions">
+				<button id="modal-cancel"></button>
+				<button id="modal-confirm"></button>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
         
