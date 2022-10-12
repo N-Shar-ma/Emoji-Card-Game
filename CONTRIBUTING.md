@@ -10,6 +10,7 @@
 Would love PRs adding more decks of cards! Any fun SFW topic is welcome! Make sure to go through the detailed instructions below carefully before jumping into the codebase!
 
 ### Detailed Instructions for Adding a New Deck of Cards:
+- ❗❗❗ **While proposing a new deck, make sure to discuss the topic by creating a new issue for the same, and getting yourself assigned, before investing time in a full PR. In that same issue, give a couple or so examples of the sort of cards you plan to have in your deck, so that we are on the same page and the chances of your PR being rejected are reduced to almost nonexistent.** ❗❗❗
 -  Boilerplate for New Deck:
 ```javascript
     {
@@ -37,7 +38,6 @@ Would love PRs adding more decks of cards! Any fun SFW topic is welcome! Make su
   - just 1 emoji: keep it as the value for primary
   - 2 emojis: keep them as the value for secondary
   - 3 emojis: make the most important one the primary, and the other 2 the secondary. 
-- **While proposing a new deck, make sure to discuss the topic by creating a new issue for the same, and getting yourself assigned, before investing time in a full PR. In that same issue, give a couple or so examples of the sort of cards you plan to have in your deck, so that we are on the same page and the chances of your PR being rejected are reduced to almost nonexistent.**
 
 ### General Guidelines for PRs:
 - Work in a new feature branch for each PR you make, not the master.
