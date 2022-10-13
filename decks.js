@@ -1174,6 +1174,113 @@ echo $message;`,
             },
         ]
   },
+  {
+      name: "Cartoons",
+      author: "AyushiGautam9",
+      instructions:"The emojis on each card are a clue to your favourite childhood cartoons. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the cartoon's name in easy mode, and one fact like the name of the characters, their famous catchphrases, or something about them in challenging mode. You can make a maximum of 3 wrong matches.",
+      cards: [
+          {
+              name: "SpongeBob SquarePants",
+              content: {
+                  primary: "🧽",
+                  secondary:"🟧👖",
+              },
+              hint: "The protagonist lives in a pineapple.",
+              matchValue: "Patrick is the best friend of the main character.",
+              seenHint: false
+          },
+          {
+              name: "Pokemon",
+              content: {
+                  primary:"Po",
+                  secondary: "🗝️🧑🏻",
+              },
+              hint: "Pikachu",
+              matchValue: "The villain in this TV cartoon show is Team Rocket.",
+              seenHint: false
+          },
+          {
+              name: "Simpsons",
+              content: {
+                  primary:"📶",
+                  secondary: "P☀️",
+              },
+              hint: "Their skin is yellow.",
+              matchValue: "Bart is one of the main characters.",
+              seenHint: false
+          },
+          {
+              name: "Mickey Mouse",
+              content: {
+                  primary:"Mi",
+                  secondary: "🗝️🐭",
+              },
+              hint: "Mystery Mouseketool",
+              matchValue: "Hot dogs is one of the famous catchphrases.",
+              seenHint: false
+          },
+          {
+              name: "Dragon Ballz",
+              content: {
+                  primary:"🐉",
+                  secondary: "🏀Z",
+              },
+              hint: "Goku",
+              matchValue:"The main cast is called the Z Warriors.",
+              seenHint: false
+          },
+          {
+              name: "Ninja Hattori",
+              content: {
+                  primary:"🥷",
+                  secondary: "⛑️⛏️",
+              },
+              hint: "Ding ding ding...",
+              matchValue: "The family there has a pet dog named Shishimaru.",
+              seenHint: false
+          },
+          {
+              name: "Doremon",
+              content: {
+                  primary:"🚪",
+                  secondary: "🅰️🌕",
+              },
+              hint: "Robot",
+              matchValue: "Dakisugi is one of the characters in the show.",
+              seenHint: false
+          },
+          {
+              name: "Ben 10",
+              content: {
+                  primary:"🍔",
+                  secondary: "🕙⌚",
+              },
+              hint: "Omnitrix",
+              matchValue: "The protagonist can transform into various aliens.",
+              seenHint: false
+          },
+          {
+              name: "Dora the Explorer",
+              content: {
+                  primary:"🚪",
+                  secondary: "🅰️🏞️",
+              },
+              hint: "Talking map",
+              matchValue: "The protagonist has a cousin named Diego.",
+              seenHint: false
+          },
+          {
+              name: "Tom and Jerry",
+              content: {
+                  primary:"🦵",
+                  secondary: "Ⓜ️🐭",
+              },
+              hint: "Cat and Rat",
+              matchValue: "One of the main characters loves cheese.",
+              seenHint: false
+          },
+      ]
+  },
 ]
 
 export function getShuffledDeck(category) {
