@@ -1216,7 +1216,7 @@ echo $message;`,
                   secondary: "🗝️🐭",
               },
               hint: "Mystery Mouseketool",
-              matchValue: ""Hot dogs" is one of the famous catchphrases.",
+              matchValue: "Hot dogs is one of the famous catchphrases.",
               seenHint: false
           },
           {
@@ -1226,7 +1226,7 @@ echo $message;`,
                   secondary: "🏀Z",
               },
               hint: "Goku",
-              matchValue:"The main cast is called the "Z Warriors".",
+              matchValue:"The main cast is called the Z Warriors.",
               seenHint: false
           },
           {
