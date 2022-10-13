@@ -1281,6 +1281,104 @@ echo $message;`,
           },
       ]
   },
+  {
+      name: "Countries",
+      author: "RaginaPhalangae",
+      instructions: "The emojis on each card are a clue to different countries across the globe. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the country's name in easy mode and their capital in challenging mode. You can make a maximum of 3 wrong matches.",
+      cards: [
+          {
+              name: "Belgium",
+              content: {
+                  secondary: "🔔💪"
+              },
+              hint: "It is famous for its chocolates.",
+              matchValue: "Its capital is Brussels.",
+              seenHint: false
+          },
+          {
+              name: "China",
+              content: {
+                  secondary: "⛓️🅰️"
+              },
+              hint: "The first outbreak of the COVID-19 pandemic happened here.",
+              matchValue: "Its capital is Beijing.",
+              seenHint: false
+          },
+          {
+              name: "Iceland",
+              content: {
+                  secondary: "🧊🏞️"
+              },
+              hint: "The Gyrfalcon is its national animal.",
+              matchValue: "Its capital is Reykjavik.",
+              seenHint: false
+          },
+          {
+              name: "Spain",
+              content: {
+                  secondary: "S🎨"
+              },
+              hint: "La Tomatina is one of its most famous festivals.",
+              matchValue:"Its capital is Madrid.",
+              seenHint: false
+          },
+          {
+              name: "Oman",
+              content: {
+                  secondary: "⭕🧑🏻"
+              },
+              hint: "It is the oldest independent state in the Arab world.",
+              matchValue: "Its capital is Muscat.",
+              seenHint: false
+          },
+          {
+              name: "Japan",
+              content: {
+                  secondary: "J🍳"
+              },
+              hint: "Mount Fuji is the tallest mountain here.",
+              matchValue: "Its capital is Tokyo.",
+              seenHint: false
+          },
+          {
+              name: "Germany",
+              content: {
+                  secondary: "🦠💰"
+              },
+              hint: "The federal eagle is its national animal.",
+              matchValue: "Its capital is Berlin.",
+              seenHint: false
+          },
+          {
+              name: "Cuba",
+              content: {
+                  secondary: "🧊🅰️"
+              },
+              hint: "Its main island is the largest in the Caribbean.",
+              matchValue: "Its capital is Havana.",
+              seenHint: false
+          },
+          {
+              name: "Finland",
+              content: {
+                  secondary: "🐠🏞️"
+              },
+              hint: "It is the world's happiest country.",
+              matchValue:"Its capital is Helsinki.",
+              seenHint: false
+          },
+          {
+              name: "France",
+              content: {
+                  primary:"F",
+                  secondary: "🏃♠️"
+              },
+              hint: "Marie Curie was born here.",
+              matchValue: "Its capital is Paris.",
+              seenHint: false
+          },
+      ]
+  },
 ]
 
 export function getShuffledDeck(category) {
