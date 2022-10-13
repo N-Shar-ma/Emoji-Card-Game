@@ -1203,7 +1203,7 @@ echo $message;`,
               name: "Simpsons",
               content: {
                   primary:"📶",
-                  secondary: "P🌞",
+                  secondary: "P☀️",
               },
               hint: "Their skin is yellow.",
               matchValue: "Bart is one of the main characters.",
