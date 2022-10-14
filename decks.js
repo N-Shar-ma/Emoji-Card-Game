@@ -1103,7 +1103,7 @@ echo $message;`,
                 seenHint: false,
             },
             {
-                name: "Hermoine Granger",
+                name: "Hermione Granger",
                 content: {
                     primary: "📚",
                     secondary: "🐱🦅",
@@ -1373,7 +1373,7 @@ echo $message;`,
                   primary:"F",
                   secondary: "🏃♠️"
               },
-              hint: "Marie Curie was born here.",
+              hint: "Marie Curie died here.",
               matchValue: "Its capital is Paris.",
               seenHint: false
           },
@@ -1478,6 +1478,133 @@ echo $message;`,
           },
       ]
   },
+    {
+        name: "Netflix series",
+        author: "kat-kan",
+        instructions:
+            "The emoji/s on each card are a clue for a Netflix series. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the series name in easy mode, and a character/place in the series in the challenging mode. You can make a maximum of 3 wrong matches.",
+        cards: [
+            {
+                name: "Stranger Things",
+                content: {
+                    secondary: "👾 🚴",
+                },
+                hint: "This series' action is set in the 1980s",
+                matchValue: "Eleven",
+                seenHint: false,
+            },
+            {
+                name: "The Umbrella Academy",
+                content: {
+                    secondary: "🎻 🏫",
+                },
+                hint: "One day, 43 women around the whole world gave birth unexpectedly",
+                matchValue: "Klaus Hargreeves",
+                seenHint: false,
+            }
+            ,
+            {
+                name: "Bridgerton",
+                content: {
+                    secondary: "📜 👰",
+                },
+                hint: "London society loves gossip",
+                matchValue: "Lady Danbury",
+                seenHint: false,
+            }
+            ,
+            {
+                name: "13 reasons why",
+                content: {
+                    secondary: "📼 📷",
+                },
+                hint: "It all started with the tapes...",
+                matchValue: "Hannah Baker",
+                seenHint: false,
+            },
+            {
+                name: "The Crown",
+                content: {
+                    secondary: "👑 🔔",
+                },
+                hint: "It's based on the historical events, however some were depicted",
+                matchValue: "Queen Elisabeth II",
+                seenHint: false,
+            },
+            {
+                name: "Sex Education",
+                content: {
+                    secondary: "👨🏻‍🏫 💑",
+                },
+                hint: "A pair of friends sets up some kind of clinic for the other students",
+                matchValue: "Otis Milburn",
+                seenHint: false,
+            },
+            {
+                name: "Peaky Blinders",
+                content: {
+                    secondary: "🥃 💰",
+                },
+                hint: "The main character is a gangster villain-hero",
+                matchValue: "Tommy Shelby",
+                seenHint: false,
+            },
+            {
+                name: "Money Heist",
+                content: {
+                    secondary: "🏦 🎭",
+                },
+                hint: "The original title is \"Le Casa de Papel\"",
+                matchValue: "Sergio Marquina",
+                seenHint: false,
+            },
+            {
+                name: "You",
+                content: {
+                    secondary: "🩸 📚",
+                },
+                hint:"It's a story about toxic love",
+                matchValue: "Joe Goldberg",
+                seenHint: false,
+            },
+            {
+                name: "The Queen's Gambit",
+                content: {
+                    secondary: "♟ 💊",
+                },
+                hint:"A miniseries about young genius",
+                matchValue: "Beth Harmon",
+                seenHint: false,
+            },
+            {
+                name: "Squid Game",
+                content: {
+                    secondary: "🔺 ⬜",
+                },
+                hint:"This game had 456 players",
+                matchValue: "Seong Gi-hun",
+                seenHint: false,
+            },
+            {
+                name: "Anne with an E",
+                content: {
+                    secondary: "💚 👩‍🦰",
+                },
+                hint:"For this little girl, Avonlea became a true home",
+                matchValue: "Marilla Cuthbert",
+                seenHint: false,
+            },
+            {
+                name: "Dark",
+                content: {
+                    secondary: "👦 👴",
+                },
+                hint:"This series is like a big puzzle",
+                matchValue: "Jonas Kahnwald",
+                seenHint: false,
+            }
+        ]
+    }
 ]
 
 export function getShuffledDeck(category) {
