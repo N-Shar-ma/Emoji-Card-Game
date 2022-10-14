@@ -1421,7 +1421,7 @@ echo $message;`,
               seenHint: false
           },
           {
-              name: "Disney+Hotstar",
+              name: "Hotstar",
               content: {
                   secondary: "🔥⭐"
               },
@@ -1452,7 +1452,7 @@ echo $message;`,
               content: {
                   secondary: "G📩"
               },
-              hint: "It introduced a web development technique named Ajax.",
+              hint: "It made mainstream a web development technique called AJAX.",
               matchValue: "It was developed by Paul Buchheit.",
               seenHint: false
           },
