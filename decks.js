@@ -1379,6 +1379,106 @@ echo $message;`,
           },
       ]
   },
+  {
+      name: "Apps",
+      author: "RaginaPhalangae",
+      instructions: "The emojis on each card are a clue to different apps. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the app's name in easy mode and their founder's name or owner's name in challenging mode. You can make a maximum of 3 wrong matches.",
+      cards: [
+          {
+              name: "Facebook",
+              content: {
+                  secondary: "🧑🏻📖"
+              },
+              hint: "Meta",
+              matchValue: "It was founded by Mark Zuckerberg.",
+              seenHint: false
+          },
+          {
+              name: "Snapchat",
+              content: {
+                  secondary: "📸📱"
+              },
+              hint: "Snaps and Streaks.",
+              matchValue: "Evan Spiegel, Bobby Murphy, and Reggie Brown are its founders.",
+              seenHint: false
+          },
+          {
+              name: "Myntra",
+              content: {
+                  secondary: "🍀Ra"
+              },
+              hint: "Tagline: A one-stop shop for all your fashion and lifestyle needs.",
+              matchValue: "The company was established by Mukesh Bansal along with Vineet Saxena and Ashutosh Lawania.",
+              seenHint: false
+          },
+          {
+              name: "TikTok",
+              content: {
+                  secondary: "✔️💬"
+              },
+              hint: "It was initially named Musical.ly.",
+              matchValue:"It was founded by Zhang Yiming.",
+              seenHint: false
+          },
+          {
+              name: "Disney+Hotstar",
+              content: {
+                  primary:"Disney",
+                  secondary: "🔥⭐",
+              },
+              hint: "It is an online video streaming platform.",
+              matchValue: "It is owned by Novi Digital Entertainment Private Limited.",
+              seenHint: false
+          },
+          {
+              name: "Uber",
+              content: {
+                  secondary: "U🐻"
+              },
+              hint: "Tagline: Move the way you want.",
+              matchValue: "It is founded by Travis Kalanick.",
+              seenHint: false
+          },
+          {
+              name: "Tinder",
+              content: {
+                  secondary: "🥫🚪"
+              },
+              hint: "Tagline: Swipe Right.",
+              matchValue: "It was launched by Sean Rad.",
+              seenHint: false
+          },
+          {
+              name: "Gmail",
+              content: {
+                  secondary: "G📩"
+              },
+              hint: "It introduced a web development technique named Ajax.",
+              matchValue: "It was developed by Paul Buchheit.",
+              seenHint: false
+          },
+          {
+              name: "Netflix",
+              content: {
+                  primary:"🥅",
+                  secondary: "🪰❎",
+              },
+              hint: "Tagline: We want to entertain the world.",
+              matchValue:"It was founded by Reed Hastings and Marc Randolph.",
+              seenHint: false
+          },
+          {
+              name: "Zomato",
+              content: {
+                  primary:"Z",
+                  secondary: "⭕🍅",
+              },
+              hint: "Tagline: Never have a bad meal.",
+              matchValue: "It is founded by Deepinder Goyal and Pankaj Chaddah.",
+              seenHint: false
+          },
+      ]
+  },
 ]
 
 export function getShuffledDeck(category) {
