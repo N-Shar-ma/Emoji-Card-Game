@@ -1423,8 +1423,7 @@ echo $message;`,
           {
               name: "Disney+Hotstar",
               content: {
-                  primary:"Disney",
-                  secondary: "🔥⭐",
+                  secondary: "🔥⭐"
               },
               hint: "It is an online video streaming platform.",
               matchValue: "It is owned by Novi Digital Entertainment Private Limited.",
