@@ -1604,7 +1604,114 @@ echo $message;`,
                 seenHint: false,
             }
         ]
-    }
+    },  {
+      name: "Football Clubs",
+      author: "Anushka Singh",
+      instructions:"The emojis on each card are a clue to your favourite football clubs. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the clubs's name in easy mode, and one fact like the name of the club, their famous players or history, or something about them in challenging mode. You can make a maximum of 3 wrong matches.",
+      cards: [
+          {
+              name: "Manchester United" ,
+              content: {
+                  primary: "🧔‍♂",
+                  secondary"♟️ together",
+              },
+              hint: "commonly referred as Man Unnited",
+              matchValue: "Siiuuuuuuu",
+              seenHint: false
+          },
+          {
+              name: "Juventus ",
+              content: {
+                  primary:"👵",
+                  secondary: "🇮🇹",
+              },
+              hint: "colloquially known as Juve",
+              matchValue: "Ángel Di María is the midfeilder",
+              seenHint: false
+          },
+          {
+              name: "Paris Saint German",
+              content: {
+                  primary:"Eiffel tower",
+                  secondary: "😇 hitler",
+              },
+              hint: "Commonly known as PSG",
+              matchValue: "Neymar is the forward",
+              seenHint: false
+          },
+          {
+              name: "Arsenal",
+              content: {
+                  primary:"🔫",
+                  secondary: "Queen",
+              },
+              hint: "Gabriel Martinelli is the forward player",
+              matchValue: "the club plays in the Premier League,the top flight of English football",
+              seenHint: false
+          },
+          {
+              name: "Real Madrid",
+              content: {
+                  primary:"👑",
+                  secondary: "spin",
+              },
+              hint: "Ronaldo has a huge history with this club",
+              matchValue:"El Clasico",
+              seenHint: false
+          },
+          {
+              name: "FC Bayren Munich",
+              content: {
+                  primary:"🍻",
+                  secondary: "hitler",
+              },
+              hint: "it is a German club, based in Munich, Bavaria",
+              matchValue: "Thomas Muller is the forward player",
+              seenHint: false
+          },
+          {
+              name: "New Castel United",
+              content: {
+                  primary:"🆕",
+                  secondary: "🏰",
+              },
+              hint: "Matt Ritchie is the forward player",
+              matchValue: "is an English club, based in Newcastle upon Tyne",
+              seenHint: false
+          },
+          {
+              name: "Chelsea",
+              content: {
+                  primary:"🐚",
+                  secondary: "🌊",
+              },
+              hint: "Kepa Arrizabalga is the goalkeeper",
+              matchValue: "they won their first major honour, the league championship in 1955",
+              seenHint: false
+          },
+          {
+              name: "West Brownwich Albion",
+              content: {
+                  primary:" ⬅️",
+                  secondary: "🧹",
+              },
+              hint: "Martin Kelly is midfielder",
+              matchValue: "club is based in Bromwich, West Midlands,England",
+              seenHint: false
+          },
+          {
+              name: "Los Angeles Galaxy",
+              content: {
+                  primary:"🎥",
+                  secondary: "🌠",
+              },
+              hint: "is based in Los Angeles metropolitian area",
+              matchValue: "Dejan Joveljic is forward player",
+              seenHint: false
+          },
+      ]
+  },
+  
 ]
 
 export function getShuffledDeck(category) {
