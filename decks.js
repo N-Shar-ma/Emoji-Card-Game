@@ -1623,7 +1623,7 @@ echo $message;`,
               name: "Juventus ",
               content: {
                   primary:"👵",
-                  secondary: "🇮🇹",
+                  secondary: "Italy",
               },
               hint: "colloquially known as Juve",
               matchValue: "Ángel Di María is the midfeilder",
