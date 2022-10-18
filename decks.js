@@ -1613,9 +1613,9 @@ echo $message;`,
               name: "Manchester United" ,
               content: {
                   primary: "🧔‍♂",
-                  secondary"♟️ together",
+                  secondary:"♟️ 🫂",
               },
-              hint: "commonly referred as Man Unnited",
+              hint: "commonly referred as Man United",
               matchValue: "Siiuuuuuuu",
               seenHint: false
           },
@@ -1632,7 +1632,7 @@ echo $message;`,
           {
               name: "Paris Saint German",
               content: {
-                  primary:"Eiffel tower",
+                  primary:"🗼",
                   secondary: "😇 hitler",
               },
               hint: "Commonly known as PSG",
