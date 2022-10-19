@@ -219,12 +219,14 @@ function handleCardInDestination(card)
 		card.classList.add("correct");
 		setTimeout(()=>{card.remove();}, 2500);
 		setTimeout(checkWin, 2500);
+		playAudio('correct.mp3');
 	}
 	else
 	{
 		card.classList.add("wrong");
 		wrongCardObjectsDeck.push(getCorrespondingCardObject(innerCard.dataset.name));
 		checkLoss();
+		playAudio('wrong.mp3');
 	}	
 }
 
@@ -326,4 +328,10 @@ function removeFromCurrentDeck(card)
 function goHome()
 {
 	location.reload();
+}
+
+
+function playAudio(audioFile) {
+	const audio = new Audio(audioFile);
+	audio.play();
 }
