@@ -6,6 +6,8 @@ let cardObjectsDeck = []
 let currentCardObjectsDeck = [];
 let wrongCardObjectsDeck = [];
 
+let isAudioEnable = localStorage.getItem('isAudioEnable') || true;
+
 
 const landingPage = document.getElementById("landing-page");
 const instructions = document.getElementById("instructions");
@@ -22,6 +24,7 @@ const source = document.getElementById("source");
 const destination = document.getElementById("destination");
 const score = document.getElementById("score");
 const hint = document.getElementById("hint");
+const audioButton = document.getElementById("audio-button");
 const maxCardsPlayable = 6;
 const maxCardsWrong = 3;
 let deckLength;
@@ -38,6 +41,11 @@ playButton.addEventListener("click", setUpGame)
 
 homeButton.addEventListener("click", goHome)
 
+audioButton.addEventListener("click", changeAudioPreference)
+
+// setting default audio preference
+audioButton.children[0].src = isAudioEnable == 'true' ? './speaker_on.png' : './speaker_off.png';
+
 function setUpGame()
 {
 	setDifficultyMode();
@@ -46,6 +54,7 @@ function setUpGame()
 	addCardsOneByOne(300)
 	updateCardDropPosition();
 	setUpCardDropPositionEventListeners();
+	changeAudioPreference()
 }
 
 function chooseDeck() {
@@ -219,12 +228,14 @@ function handleCardInDestination(card)
 		card.classList.add("correct");
 		setTimeout(()=>{card.remove();}, 2500);
 		setTimeout(checkWin, 2500);
+		playAudio('correct.mp3');
 	}
 	else
 	{
 		card.classList.add("wrong");
 		wrongCardObjectsDeck.push(getCorrespondingCardObject(innerCard.dataset.name));
 		checkLoss();
+		playAudio('wrong.mp3');
 	}	
 }
 
@@ -326,4 +337,18 @@ function removeFromCurrentDeck(card)
 function goHome()
 {
 	location.reload();
+}
+
+
+function playAudio(audioFile) {
+	if(isAudioEnable){
+		const audio = new Audio(audioFile);
+		audio.play();
+	}
+}
+
+function changeAudioPreference() {
+	isAudioEnable = isAudioEnable ? false : true;
+	localStorage.setItem('isAudioEnable', isAudioEnable);
+	audioButton.children[0].src = isAudioEnable ? './speaker_on.png' : './speaker_off.png';
 }
