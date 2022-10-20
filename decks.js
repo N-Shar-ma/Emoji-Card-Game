@@ -878,21 +878,21 @@ echo $message;`,
         instructions: "The emoji/s on each card are a clue for a CEO of a company. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the fruit name in easy mode, and a fact of the food in the challenging mode. You can make a maximum of 3 wrong matches.",
         cards:[
             {
-                name: "Satya Nadella",
+                name: "Bill Gates",
                 content: {
                     secondary: "🙋‍♀️crow🧈", 
                 },
-                hint: "The answer is related to Bill Gates.",
-                matchValue: "He is the executive chairman and CEO of Microsoft, succeeding Steve Ballmer in 2014 as CEO",
+                hint: "Heard of Maang",
+                matchValue: "Microsoft was founded by Bill Gates in 1975",
                 seenHint: false
             },
             {
-                name: "Sundar Pichai",
+                name: "Larry Page",
                 content: {
                     secondary: "👓🔎"
                 },
                 hint: "You use a search engine everyday",
-                matchValue: "He is the chief executive officer (CEO) of Alphabet Inc. and its subsidiary Google",
+                matchValue: "Google was founded on September 4, 1998, by Larry Page ",
                 seenHint: false
             },
             {
@@ -901,70 +901,70 @@ echo $message;`,
                     secondary: "😊📖"
                 },
                 hint: "Taken over an important app you use.",
-                matchValue: "Mark Elliot Zuckerberg is an American business magnate, internet entrepreneur, and philanthropist",
+                matchValue: "Mark Elliot Zuckerberg founded Facebook.",
                 seenHint: false
             },
             {
-                name: "Andrew Jassy",
+                name: "Jeff Bezoz",
                 content: {
                     secondary: "😮🔛"
                 },
                 hint: "Shop, window shop",
-                matchValue: "Andrew R. Jassy is an American business executive who has been the president and chief executive officer (CEO) of Amazon since 2021.",
+                matchValue: "He is the founder, executive chairman, and former president and CEO of Amazon.",
                 seenHint: false
             },
             {
-                name: "Ola Källenius",
+                name: "Emil Jellinek",
                 content: {
                     secondary: "🌡️©️🇩🇿"
                 },
                 hint: "We all dream of owning this car",
-                matchValue: "He is the chairman of the board of management of Mercedes-Benz Group, and CEO of Mercedes-Benz.",
+                matchValue: "Origin of Mercedes Benz traces back to Karl Benz and Emil Jellinek.",
                 seenHint: false
             },
             {
-                name: "Parag Agarwal",
+                name: "Jack Dorsey",
                 content: {
                     secondary: "🍵w😢"
                 },
                 hint: "We all love the bird emoji",
-                matchValue: "He is an Indian-American software engineer who is the chief executive officer (CEO) of Twitter, Inc.",
+                matchValue: "Twitter was created by Jack Dorsey in March 2008.",
                 seenHint: false
             },
             {
-                name: "Shantanu Narayen",
+                name: "John Warnock",
                 content: {
                     secondary: "🅰️🐕🇧🇪"
                 },
                 hint: "PDF viewer, reader, digital signature",
-                matchValue: "He has been the chairman, president, and chief executive officer (CEO) of Adobe Inc. since December 2007.",
+                matchValue: "Adobe was founded in December 1982 by John Warnock.",
                 seenHint: false
             },
             {
-                name: "Tim Cook",
+                name: "Steve Jobs",
                 content: {
                     secondary: "A💊"
                 },
                 hint: "- a day keeps doctor away",
-                matchValue: "Timothy Donald Cook (born November 1, 1960) is an American business executive who has been the chief executive officer of Apple Inc. since 2011",
+                matchValue: "Apple was founded on April 1, 1976, by Steve Jobs",
                 seenHint: false
             },
             {
-                name: "Arvind Krishna",
+                name: "Charles Ranlett Flint",
                 content: {
                     secondary: "👁️🇧🇲"
                 },
                 hint: "Business machines",
-                matchValue: "Arvind Krishna is an Indian-American business executive serving as the Chairman and CEO of IBM. He has been the CEO of IBM since April 2020 and took on the role of Chairman in January 2021",
+                matchValue: "The company began in 1911 founded by Charles Ranlett Flint",
                 seenHint: false
             },
             {
-                name: "Leena Nair",
+                name: "Coco Chanel",
                 content: {
-                    secondary: "🍵🚱"
+                    secondary: "📺📴💅"
                 },
                 hint: "French luxury fashion house",
-                matchValue: "She is a British-Indian business executive who is the Global CEO of Chanel",
+                matchValue: "French luxury fashion house founded in 1910 by Coco Chanel",
                 seenHint: false
             }
         ]
