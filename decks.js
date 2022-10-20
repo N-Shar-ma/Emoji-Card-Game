@@ -870,6 +870,740 @@ echo $message;`,
                 seenHint: false
             }
         ]
+    },
+    {
+        name: "Fantasy Fiction Books",
+        author: "kat-kan",
+        instructions:
+            "The emoji/s on each card are a clue for a fantasy fiction book. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the book or saga name in easy mode, and a character/place in the book in the challenging mode. You can make a maximum of 3 wrong matches.",
+        cards: [
+            {
+                name: "Harry Potter and the Philosopher's Stone\n(Harry Potter Saga)",
+                content: {
+                    secondary: "⚡ 🧙",
+                },
+                hint: "The boy who lived",
+                matchValue: "Hermione Granger",
+                seenHint: false,
+            },
+            {
+                name: "The Fellowship of the Ring\n(Lord of the Rings saga)",
+                content: {
+                    secondary: "🧝‍ 💍",
+                },
+                hint: "This book is largely concerned with hobbits",
+                matchValue: "Frodo Baggins",
+                seenHint: false,
+            }
+            ,
+            {
+                name: "Alice's Adventures in Wonderland",
+                content: {
+                    secondary: "🐇 🕛",
+                },
+                hint: "DRINK ME",
+                matchValue: "The Cheshire Cat",
+                seenHint: false,
+            }
+            ,
+            {
+                name: "The Colour of Magic",
+                content: {
+                    secondary: "🌈 🧙",
+                },
+                hint: "This wizard never finished the Unseen University",
+                matchValue: "Rincewind",
+                seenHint: false,
+            },
+            {
+                name: "The Twilight",
+                content: {
+                    secondary: "🍎 🧛",
+                },
+                hint: "How long have you been seventeen?",
+                matchValue: "Edward Cullen",
+                seenHint: false,
+            },
+            {
+                name: "Eragon",
+                content: {
+                    secondary: "🐉 🥚",
+                },
+                hint: "A story about 15 year old boy who became a dragon rider",
+                matchValue: "Saphira",
+                seenHint: false,
+            },
+            {
+                name: "A Game of Thrones",
+                content: {
+                    secondary: "🧊 🩸",
+                },
+                hint: "This saga is known for killing many characters",
+                matchValue: "John Snow",
+                seenHint: false,
+            },
+            {
+                name: "Blood of Elves\n(The Witcher Saga)",
+                content: {
+                    secondary: "🐺 🗡️",
+                },
+                hint: "The main character's love smells like lilac and gooseberries",
+                matchValue: "Geralt from Rivia",
+                seenHint: false,
+            },
+            {
+                name: "The Hunger Games",
+                content: {
+                    secondary: "🐦 🏹",
+                },
+                hint: "12 districts, 24 volunteers",
+                matchValue: "Katniss Everdeen",
+                seenHint: false,
+            }
+        ]
+    },
+    {
+      name: "DC Heroes",
+      author: "thevinitgupta",
+      instructions: "The emoji/s on each card are a clue for a hero from the DC universe. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the superhero's alias in easy mode, and their real name in the challenging mode. You can make a maximum of 3 wrong matches.",
+      cards: [
+          {
+              name: "Batman",
+              content: {
+                  secondary: "🦇👨🏻"
+              },
+              hint: "Works in the night",
+              matchValue: `Bruce Wayne`,
+              seenHint: false
+          },
+          {
+              name: "Superman",
+              content: {
+                  secondary: "💪👦"
+              },
+              hint: "An alien who works at the Daily Planet",
+              matchValue: `Clark Kent`,
+              seenHint: false
+          },
+          {
+              name: "Flash",
+              content: {
+                  secondary: "⚡🏃‍♂️"
+              },
+              hint: "Can beat you at a race",
+              matchValue: `Barry Allen`,
+              seenHint: false
+          },
+          {
+              name: "Aquaman",
+              content: {
+                  secondary: "🌊🤴"
+              },
+              hint: "He is a Hybrid",
+              matchValue: `Arthur Curry`,
+              seenHint: false
+          },
+          {
+              name: "Green Lantern",
+              content: {
+                  secondary: "🟩🏮"
+              },
+              hint: "In brightest day, in blackest night, no evil...",
+              matchValue: `Hal Jordan`,
+              seenHint: false
+          },
+          {
+              name: "Martian Manhunter",
+              content: {
+                  secondary: "👽🔥"
+              },
+              hint: "He can read your mind but is afraid of fire",
+              matchValue: `J'onn J'onzz`,
+              seenHint: false
+          },
+          {
+              name: "Wonder Woman",
+              content: {
+                  secondary: "👸⚔"
+              },
+              hint: "Princess of the Amazons",
+              matchValue: `Diana Prince`,
+              seenHint: false
+          },
+          {
+              name: "Green Arrow",
+              content: {
+                  secondary: "🏹🟩"
+              },
+              hint: "He's another genius billionaire like Batman",
+              matchValue: `Oliver Queen`,
+              seenHint: false
+          },
+          {
+              name: "Constantine",
+              content: {
+                  secondary: "👻🗣"
+              },
+              hint: "Can talk to dead people",
+              matchValue: `John Constantine`,
+              seenHint: false
+          },
+          {
+              name: "Shazam",
+              content: {
+                  secondary: "🧙‍♂️🌩"
+              },
+              hint: "He's a kid in a man's body",
+              matchValue: `Billy Batson`,
+              seenHint: false
+          },
+          {
+              name: "Blue Beetle",
+              content: {
+                  secondary: "🐞🟦"
+              },
+              hint: "He has a bio mechanical armour blue in color",
+              matchValue: `Jamie Reyes`,
+              seenHint: false
+          },
+        {
+              name: "Beast Boy",
+              content: {
+                  secondary: "🧟‍♂️🦍"
+              },
+              hint: "He's the coolest kid around and transforms in animals",
+              matchValue: `Garfield Logan`,
+              seenHint: false
+          },
+      ]
+  },
+  {
+    name: "Harry Potter Characters",
+        author: "Ni-vik",
+        instructions: "The emojis on each card represent a character from the Harry Potter Universe. You can flip(click) the card and see a hint.Drag and drop a card onto the matching text clue on the right, which is character's name in easy mode and some info regarding character in challengening mode.",
+        cards: [
+            {
+                name: "George Weasley",
+                content: {
+                    primary: "🦅",
+                    secondary: "❌👂",
+                },
+                hint: "Saint-like",
+                matchValue: "Identical twin brother of Fred Weasley",
+                seenHint: false,
+            },
+            {
+                name: "Severus Snape",
+                content: {
+                    primary: "🩸",
+                    secondary: "🐍🦌",
+                },
+                hint: "Always",
+                matchValue: "Member of both the death eaters and the order of the phoenix",
+                seenHint: false,
+            },
+            {
+                name: "Hermione Granger",
+                content: {
+                    primary: "📚",
+                    secondary: "🐱🦅",
+                },
+                hint: "Muggle-born in Harry's Year",
+                matchValue: "Prefect and co-founder of the Dumbledore's army",
+                seenHint: false,
+            },
+            {
+                name: "Ron Weasley",
+                content: {
+                    primary: "🕷",
+                    secondary: "🐭🦅",
+                },
+                hint: "Scabbers",
+                matchValue: "Padma Patil's date for Yule Ball",
+                seenHint: false,
+            },
+            {
+                name: "Draco Malfoy",
+                content: {
+                    primary: "💰",
+                    secondary: "🐍🧹",
+                },
+                hint: "Nimbus 2001",
+                matchValue: "Attacked by the hippogriff,Buckbeak",
+                seenHint: false,
+            },
+            {
+                name: "Sirius Black",
+                content: {
+                    primary: "🐶",
+                    secondary: "◾🦅",
+                },
+                hint: "prisoner of azkaban",
+                matchValue: "He was named godfather of Harry",
+                seenHint: false,
+            },
+            {
+                name: "Albus Dumbledore",
+                content: {
+                    primary: "💯",
+                    secondary: "🦅👨‍🏫",
+                },
+                hint: "100 points to gryffindor",
+                matchValue: "Defeated Gellert Grindelwald in the global wizarding war",
+                seenHint: false,
+            },
+            {
+                name: "Harry Potter",
+                content: {
+                    primary: "⚡",
+                    secondary: "🦉🦅",
+                },
+                hint: "Chosen one",
+                matchValue: "Becomes master of death in dealthly hallows",
+                seenHint: false,
+            },
+            {
+                name: "Lord Voldemort",
+                content: {
+                    primary: "7️⃣",
+                    secondary: "👃🐍",
+                },
+                hint: "You-Know-Who",
+                matchValue: "Tom Marvolo Riddle",
+                seenHint: false,
+            },
+        ]
+  },
+  {
+      name: "Cartoons",
+      author: "AyushiGautam9",
+      instructions:"The emojis on each card are a clue to your favourite childhood cartoons. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the cartoon's name in easy mode, and one fact like the name of the characters, their famous catchphrases, or something about them in challenging mode. You can make a maximum of 3 wrong matches.",
+      cards: [
+          {
+              name: "SpongeBob SquarePants",
+              content: {
+                  primary: "🧽",
+                  secondary:"🟧👖",
+              },
+              hint: "The protagonist lives in a pineapple.",
+              matchValue: "Patrick is the best friend of the main character.",
+              seenHint: false
+          },
+          {
+              name: "Pokemon",
+              content: {
+                  primary:"Po",
+                  secondary: "🗝️🧑🏻",
+              },
+              hint: "Pikachu",
+              matchValue: "The villain in this TV cartoon show is Team Rocket.",
+              seenHint: false
+          },
+          {
+              name: "Simpsons",
+              content: {
+                  primary:"📶",
+                  secondary: "P☀️",
+              },
+              hint: "Their skin is yellow.",
+              matchValue: "Bart is one of the main characters.",
+              seenHint: false
+          },
+          {
+              name: "Mickey Mouse",
+              content: {
+                  primary:"Mi",
+                  secondary: "🗝️🐭",
+              },
+              hint: "Mystery Mouseketool",
+              matchValue: "Hot dogs is one of the famous catchphrases.",
+              seenHint: false
+          },
+          {
+              name: "Dragon Ballz",
+              content: {
+                  primary:"🐉",
+                  secondary: "🏀Z",
+              },
+              hint: "Goku",
+              matchValue:"The main cast is called the Z Warriors.",
+              seenHint: false
+          },
+          {
+              name: "Ninja Hattori",
+              content: {
+                  primary:"🥷",
+                  secondary: "⛑️⛏️",
+              },
+              hint: "Ding ding ding...",
+              matchValue: "The family there has a pet dog named Shishimaru.",
+              seenHint: false
+          },
+          {
+              name: "Doremon",
+              content: {
+                  primary:"🚪",
+                  secondary: "🅰️🌕",
+              },
+              hint: "Robot",
+              matchValue: "Dakisugi is one of the characters in the show.",
+              seenHint: false
+          },
+          {
+              name: "Ben 10",
+              content: {
+                  primary:"🍔",
+                  secondary: "🕙⌚",
+              },
+              hint: "Omnitrix",
+              matchValue: "The protagonist can transform into various aliens.",
+              seenHint: false
+          },
+          {
+              name: "Dora the Explorer",
+              content: {
+                  primary:"🚪",
+                  secondary: "🅰️🏞️",
+              },
+              hint: "Talking map",
+              matchValue: "The protagonist has a cousin named Diego.",
+              seenHint: false
+          },
+          {
+              name: "Tom and Jerry",
+              content: {
+                  primary:"🦵",
+                  secondary: "Ⓜ️🐭",
+              },
+              hint: "Cat and Rat",
+              matchValue: "One of the main characters loves cheese.",
+              seenHint: false
+          },
+      ]
+  },
+  {
+      name: "Countries",
+      author: "RaginaPhalangae",
+      instructions: "The emojis on each card are a clue to different countries across the globe. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the country's name in easy mode and their capital in challenging mode. You can make a maximum of 3 wrong matches.",
+      cards: [
+          {
+              name: "Belgium",
+              content: {
+                  secondary: "🔔💪"
+              },
+              hint: "It is famous for its chocolates.",
+              matchValue: "Its capital is Brussels.",
+              seenHint: false
+          },
+          {
+              name: "China",
+              content: {
+                  secondary: "⛓️🅰️"
+              },
+              hint: "The first outbreak of the COVID-19 pandemic happened here.",
+              matchValue: "Its capital is Beijing.",
+              seenHint: false
+          },
+          {
+              name: "Iceland",
+              content: {
+                  secondary: "🧊🏞️"
+              },
+              hint: "The Gyrfalcon is its national animal.",
+              matchValue: "Its capital is Reykjavik.",
+              seenHint: false
+          },
+          {
+              name: "Spain",
+              content: {
+                  secondary: "S🎨"
+              },
+              hint: "La Tomatina is one of its most famous festivals.",
+              matchValue:"Its capital is Madrid.",
+              seenHint: false
+          },
+          {
+              name: "Oman",
+              content: {
+                  secondary: "⭕🧑🏻"
+              },
+              hint: "It is the oldest independent state in the Arab world.",
+              matchValue: "Its capital is Muscat.",
+              seenHint: false
+          },
+          {
+              name: "Japan",
+              content: {
+                  secondary: "J🍳"
+              },
+              hint: "Mount Fuji is the tallest mountain here.",
+              matchValue: "Its capital is Tokyo.",
+              seenHint: false
+          },
+          {
+              name: "Germany",
+              content: {
+                  secondary: "🦠💰"
+              },
+              hint: "The federal eagle is its national animal.",
+              matchValue: "Its capital is Berlin.",
+              seenHint: false
+          },
+          {
+              name: "Cuba",
+              content: {
+                  secondary: "🧊🅰️"
+              },
+              hint: "Its main island is the largest in the Caribbean.",
+              matchValue: "Its capital is Havana.",
+              seenHint: false
+          },
+          {
+              name: "Finland",
+              content: {
+                  secondary: "🐠🏞️"
+              },
+              hint: "It is the world's happiest country.",
+              matchValue:"Its capital is Helsinki.",
+              seenHint: false
+          },
+          {
+              name: "France",
+              content: {
+                  primary:"F",
+                  secondary: "🏃♠️"
+              },
+              hint: "Marie Curie died here.",
+              matchValue: "Its capital is Paris.",
+              seenHint: false
+          },
+      ]
+  },
+  {
+      name: "Apps",
+      author: "RaginaPhalangae",
+      instructions: "The emojis on each card are a clue to different apps. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the app's name in easy mode and their founder's name or owner's name in challenging mode. You can make a maximum of 3 wrong matches.",
+      cards: [
+          {
+              name: "Facebook",
+              content: {
+                  secondary: "🧑🏻📖"
+              },
+              hint: "Meta",
+              matchValue: "It was founded by Mark Zuckerberg.",
+              seenHint: false
+          },
+          {
+              name: "Snapchat",
+              content: {
+                  secondary: "📸📱"
+              },
+              hint: "Snaps and Streaks.",
+              matchValue: "Evan Spiegel, Bobby Murphy, and Reggie Brown are its founders.",
+              seenHint: false
+          },
+          {
+              name: "Myntra",
+              content: {
+                  secondary: "🍀Ra"
+              },
+              hint: "Tagline: A one-stop shop for all your fashion and lifestyle needs.",
+              matchValue: "The company was established by Mukesh Bansal along with Vineet Saxena and Ashutosh Lawania.",
+              seenHint: false
+          },
+          {
+              name: "TikTok",
+              content: {
+                  secondary: "✔️💬"
+              },
+              hint: "It was initially named Musical.ly.",
+              matchValue:"It was founded by Zhang Yiming.",
+              seenHint: false
+          },
+          {
+              name: "Hotstar",
+              content: {
+                  secondary: "🔥⭐"
+              },
+              hint: "It is an online video streaming platform.",
+              matchValue: "It is owned by Novi Digital Entertainment Private Limited.",
+              seenHint: false
+          },
+          {
+              name: "Uber",
+              content: {
+                  secondary: "U🐻"
+              },
+              hint: "Tagline: Move the way you want.",
+              matchValue: "It is founded by Travis Kalanick.",
+              seenHint: false
+          },
+          {
+              name: "Tinder",
+              content: {
+                  secondary: "🥫🚪"
+              },
+              hint: "Tagline: Swipe Right.",
+              matchValue: "It was launched by Sean Rad.",
+              seenHint: false
+          },
+          {
+              name: "Gmail",
+              content: {
+                  secondary: "G📩"
+              },
+              hint: "It made mainstream a web development technique called AJAX.",
+              matchValue: "It was developed by Paul Buchheit.",
+              seenHint: false
+          },
+          {
+              name: "Netflix",
+              content: {
+                  primary:"🥅",
+                  secondary: "🪰❎",
+              },
+              hint: "Tagline: We want to entertain the world.",
+              matchValue:"It was founded by Reed Hastings and Marc Randolph.",
+              seenHint: false
+          },
+          {
+              name: "Zomato",
+              content: {
+                  primary:"Z",
+                  secondary: "⭕🍅",
+              },
+              hint: "Tagline: Never have a bad meal.",
+              matchValue: "It is founded by Deepinder Goyal and Pankaj Chaddah.",
+              seenHint: false
+          },
+      ]
+  },
+    {
+        name: "Netflix series",
+        author: "kat-kan",
+        instructions:
+            "The emoji/s on each card are a clue for a Netflix series. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the series name in easy mode, and a character/place in the series in the challenging mode. You can make a maximum of 3 wrong matches.",
+        cards: [
+            {
+                name: "Stranger Things",
+                content: {
+                    secondary: "👾 🚴",
+                },
+                hint: "This series' action is set in the 1980s",
+                matchValue: "Eleven",
+                seenHint: false,
+            },
+            {
+                name: "The Umbrella Academy",
+                content: {
+                    secondary: "🎻 🏫",
+                },
+                hint: "One day, 43 women around the whole world gave birth unexpectedly",
+                matchValue: "Klaus Hargreeves",
+                seenHint: false,
+            }
+            ,
+            {
+                name: "Bridgerton",
+                content: {
+                    secondary: "📜 👰",
+                },
+                hint: "London society loves gossip",
+                matchValue: "Lady Danbury",
+                seenHint: false,
+            }
+            ,
+            {
+                name: "13 reasons why",
+                content: {
+                    secondary: "📼 📷",
+                },
+                hint: "It all started with the tapes...",
+                matchValue: "Hannah Baker",
+                seenHint: false,
+            },
+            {
+                name: "The Crown",
+                content: {
+                    secondary: "👑 🔔",
+                },
+                hint: "It's based on the historical events, however some were depicted",
+                matchValue: "Queen Elisabeth II",
+                seenHint: false,
+            },
+            {
+                name: "Sex Education",
+                content: {
+                    secondary: "👨🏻‍🏫 💑",
+                },
+                hint: "A pair of friends sets up some kind of clinic for the other students",
+                matchValue: "Otis Milburn",
+                seenHint: false,
+            },
+            {
+                name: "Peaky Blinders",
+                content: {
+                    secondary: "🥃 💰",
+                },
+                hint: "The main character is a gangster villain-hero",
+                matchValue: "Tommy Shelby",
+                seenHint: false,
+            },
+            {
+                name: "Money Heist",
+                content: {
+                    secondary: "🏦 🎭",
+                },
+                hint: "The original title is \"Le Casa de Papel\"",
+                matchValue: "Sergio Marquina",
+                seenHint: false,
+            },
+            {
+                name: "You",
+                content: {
+                    secondary: "🩸 📚",
+                },
+                hint:"It's a story about toxic love",
+                matchValue: "Joe Goldberg",
+                seenHint: false,
+            },
+            {
+                name: "The Queen's Gambit",
+                content: {
+                    secondary: "♟ 💊",
+                },
+                hint:"A miniseries about young genius",
+                matchValue: "Beth Harmon",
+                seenHint: false,
+            },
+            {
+                name: "Squid Game",
+                content: {
+                    secondary: "🔺 ⬜",
+                },
+                hint:"This game had 456 players",
+                matchValue: "Seong Gi-hun",
+                seenHint: false,
+            },
+            {
+                name: "Anne with an E",
+                content: {
+                    secondary: "💚 👩‍🦰",
+                },
+                hint:"For this little girl, Avonlea became a true home",
+                matchValue: "Marilla Cuthbert",
+                seenHint: false,
+            },
+            {
+                name: "Dark",
+                content: {
+                    secondary: "👦 👴",
+                },
+                hint:"This series is like a big puzzle",
+                matchValue: "Jonas Kahnwald",
+                seenHint: false,
+            }
+        ]
     }
 ],
        {

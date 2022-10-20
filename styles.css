@@ -8,8 +8,10 @@
 :root{
 	/*	--card-height: 160px;*/
 	--card-height: 35vh;
+	--card-height-small: 20vh;
 	/*	--card-width: 120px;*/
 	--card-width: 12vw;
+	--card-width-small : 25vw;
 	/*	--card-border-radius: 10px;*/
 	--card-border-radius: 1vw;
 	--rotation: 0deg;
@@ -39,7 +41,7 @@ body{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	box-shadow: 0px 0px 5px 1px black;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.518);
 }
 
 #play-btn{
@@ -49,14 +51,28 @@ body{
 	padding: 5px 15px;
 	font-size: 2rem;
 	border-radius: var(--card-border-radius);
-	box-shadow: 2px 2px 3px 1px black;
+	box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.518);
 	transition: 300ms;
 }
 
 #play-btn:hover{
 	background-color: orange;
 	color: white;
-	box-shadow: 1px 1px 2px 1px black;
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.518);
+}
+
+#home-btn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 1.2vw;
+	background-color: hsla(0, 0%, 100%, 0.7);
+	font-size: 1.2rem;
+	color: grey;
+	border: 2px solid grey;
+	border-radius: 5px;
+	padding: 0 3px;
+	cursor: pointer;
 }
 
 #title-text {
@@ -66,7 +82,6 @@ body{
 }
 
 #footer {
-	margin-top: -1rem;
 	text-decoration: none;
 	color: black;
 	font-family: 'Mali', cursive;
@@ -135,6 +150,7 @@ main{
 #deck-author-display {
     left: 50vw;
     top: 97vh;
+	background-color: hsla(0, 0%, 100%, 1);
 }
 
 #deck-author-display a{
@@ -166,7 +182,7 @@ main{
 	align-items: center;
 	border: 5px solid var(--container-border-color);
 	border-radius: calc(2 * var(--card-border-radius));
-	box-shadow: 5px 5px 10px 5px black;
+	box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.318);
 }
 
 #source{
@@ -202,7 +218,7 @@ main{
 	transform-style: preserve-3d;
 	transform: rotateY(var(--rotation) );
 	transition: transform 500ms ease-in-out;
-	box-shadow: 0px 0px 15px 5px var(--card-shadow-color, rgba(0, 0, 0, 0));
+	box-shadow: 0px 0px 15px 5px var(--card-shadow-color, rgba(0, 0, 0, 0.518));
 }
 
 .card.flipped{
@@ -379,4 +395,168 @@ main{
 #card-drop-position.dragged-over::after{
 	border-color: hsl(120, 100%, 25%);
 	opacity: 1;
+}
+
+
+@media screen and (max-width : 1110px){
+	#landing-page{
+		width: 45vw;
+	}
+}
+
+@media screen and (max-width : 860px){
+	#landing-page{
+		width: 65vw;
+	}
+	main{
+		flex-direction: column;
+		justify-content: center;
+		gap : 15px;
+	}
+	.card-container{
+		width: 90vw;
+		grid-template-columns: repeat(3, var(--card-width-small));
+	}
+	#source{
+		grid-template-rows: repeat(2, var(--card-height-small));
+	}
+	#destination{
+		grid-template-rows: var(--card-height-small);
+	}
+	#score-display{
+		top : 4vh;
+		left: 20vw;
+	}
+	#hints-display{
+		top : 4vh;
+	}
+	#deck-author-display{
+		width: 60vw;
+		text-align: center;
+	}
+	.card-wrapper{
+		height: 20vh;
+		width: 22vw;
+	}
+	.primary{
+		font-size: 4rem;
+	}	
+	.secondary{
+		font-size: 2.5rem;
+	}
+	#card-drop-position{
+		height: 20vh;
+		width: 22vw;
+	}
+}
+
+
+@media screen and (max-width : 520px){
+	#landing-page{
+		width: 80vw;
+	}
+	.card-wrapper{
+		height: 20vh;
+		width: 26vw;
+	}
+	.primary{
+		font-size: 3.5rem;
+	}	
+	.secondary{
+		font-size: 2rem;
+	}
+	
+}
+
+/*
+Excluding the container in its hidden state from this rule might appear
+counter-intuitive, but it is required for the animation to work correctly.
+Display will be set to none for the hidden state using javascript.
+*/
+#modal-container:not(.hidden) {
+	opacity: 0;
+	display: none;
+}
+
+#modal-container, #modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000;
+}
+
+#modal-container.visible {
+	display: block;
+	animation: modal-fadein 300ms ease-out 1 forwards;
+}
+
+#modal-container.hidden {
+	animation: modal-fadeout 300ms ease-out 1 forwards;
+}
+
+@keyframes modal-fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes modal-fadeout {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+#modal-overlay {
+	background-color: rgba(0, 0, 0, 0.518);
+	backdrop-filter: blur(2px);
+}
+
+#modal-box{
+	width: fit-content;
+	max-width: 60vw;
+	min-width: 300px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: orange;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+	border-radius: calc(2 * var(--card-border-radius));
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.318);
+	padding: 16px;
+	z-index: 1001;
+}
+
+#modal-title {
+	font-family: 'Mali', cursive;
+	font-size: 2rem;
+	text-align: center;
+	margin: 8px 0;
+}
+
+#modal-content {
+	margin: 8px 0;
+}
+
+#modal-actions {
+	display: flex;
+	justify-content: end;
+}
+
+#modal-confirm, #modal-cancel{
+	border: none;
+	background-color: white;
+	color: orange;
+	padding: 5px 15px;
+	border-radius: calc(var(--card-border-radius) / 2);
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.518);
+	transition: 300ms;
+	margin: 0 8px;
+}
+
+#modal-confirm:hover, #modal-cancel:hover{
+	background-color: orange;
+	color: white;
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.518);
+	cursor: pointer;
 }

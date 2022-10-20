@@ -1,4 +1,5 @@
 import { getAuthor, getInstructions, getShuffledDeck } from "./decks.js"
+import modal from "./modal.js";
 
 let cardObjectsDeck = []
 
@@ -13,6 +14,7 @@ const difficultyMode = document.getElementById("difficulty-mode");
 const authorName = document.getElementById("author")
 const gameArea = document.getElementById("game-area");
 const playButton = document.getElementById("play-btn");
+const homeButton = document.getElementById("home-btn");
 const nameShower = document.getElementById("name-shower");
 const nameToShow = document.querySelector("#name-shower span"); 
 const cardDropPosition = document.getElementById("card-drop-position");
@@ -33,6 +35,8 @@ chooseDeck()
 category.addEventListener("change", chooseDeck)
 
 playButton.addEventListener("click", setUpGame)
+
+homeButton.addEventListener("click", goHome)
 
 function setUpGame()
 {
@@ -132,11 +136,17 @@ function flip()
 	{
 		this.classList.toggle("flipped");
 	}
-	else if(!cardObject.seenHint && confirm("Are you sure you want to see a hint?"))
+	else if(!cardObject.seenHint)
 	{
-		updateHintElement(++hintCount);
-		cardObject.seenHint = true;
-		this.classList.toggle("flipped");
+		modal.show("Hint Confirmation", "Are you sure you want to see a hint?", {
+			cancelBtnText: "No",
+			confirmBtnText: "Yes",
+			onConfirm : () => {
+				updateHintElement(++hintCount);
+				cardObject.seenHint = true;
+				this.classList.toggle("flipped");
+			}
+		})
 	}
 }
 
@@ -266,14 +276,16 @@ function isDestinationFull()
 function showGameOver(won)
 {
 	const msg = won? `🏆    You won!    🏆`: `😭    You lost!    😭`;
-	if(confirm(`${msg}
-
-Your score is ${scoreCount} and you took ${hintCount} hint${hintCount===1?"":"s"}.
-
-${won? getAchievement() : ""}Select ok to play again!`))
-	{
-		location.reload();
-	}
+	modal.show(
+		msg,
+		`Your score is ${scoreCount} and you took ${hintCount} hint${hintCount===1?"":"s"}.
+${won? getAchievement() : ""}Select ok to play again!`,
+		{
+			showCancelBtn: false,
+			confirmBtnText: "OK",
+			onConfirm: () => window.location.reload()
+		}
+	)
 }
 
 function getAchievement()
@@ -309,4 +321,9 @@ function removeFromCurrentDeck(card)
 {
 	const index = currentCardObjectsDeck.findIndex(cardObject=>card.dataset.name === cardObject.name);
 	currentCardObjectsDeck.splice(index, 1);
+}
+
+function goHome()
+{
+	location.reload();
 }
