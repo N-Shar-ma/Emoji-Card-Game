@@ -1616,7 +1616,7 @@ echo $message;`,
                   secondary:"🛕 🏃‍♀️",
               },
               hint: "Zoombie run was developed in the wake of this games's success",
-              matchValue: "Barry Boner.",
+              matchValue: "Barry Bones",
               seenHint: false
           },
           {
@@ -1643,7 +1643,7 @@ echo $message;`,
                   secondary: "🚗 8",
               },
               hint: "First game in the series to feature a licensed soundtrack.",
-              matchValue: "Racing video game.",
+              matchValue: "Racing video game",
               seenHint: false
           },
           {
@@ -1661,7 +1661,7 @@ echo $message;`,
                   secondary: "🚗 🏃‍♀️",
               },
               hint: "Game revolves around driving and shooting with occasional role-playing and stealth element.",
-              matchValue: "Maria Latore.",
+              matchValue: "Maria Latore",
               seenHint: false
           },
           {
@@ -1669,8 +1669,8 @@ echo $message;`,
               content: {
                   secondary: "🥷 🥷",
               },
-              hint: "Game revolves around combat, stealth and ecploration, including the use of parkour to navigate the environment.",
-              matchValue: "Open-world action-adventure stealth video game.",
+              hint: "Game revolves around combat, stealth and ecploration, including parkour to navigate the environment.",
+              matchValue: "Desmond Miles",
               seenHint: false
           },
           {
@@ -1688,7 +1688,7 @@ echo $message;`,
                   secondary: "🎲 👑",
               },
               hint: "Ranked among top Android games globally in 2020.",
-              matchValue: "A record breaking casual game in history of mobile gaming.",
+              matchValue: "A record breaking casual game in the history of mobile gaming.",
               seenHint: false
           },
           {
@@ -1706,7 +1706,7 @@ echo $message;`,
                   secondary: "🏂 🛤️",
               },
               hint: "Main character of the game tries to escape from the inspector and his dog.",
-              matchValue: "Jack.",
+              matchValue: "Tricky",
               seenHint: false
           },
          {
@@ -1714,8 +1714,8 @@ echo $message;`,
               content: {
                   secondary: "🤫 🔫",
               },
-              hint: "Cremates work together to compplete tasks before one or more Imposters can kill everyone aboard.",
-              matchValue: "Aparty game of teamwork and betrayal.",
+              hint: "Crewmates work together to compplete tasks before one or more Imposters can kill everyone aboard.",
+              matchValue: "A party game of teamwork and betrayal",
               seenHint: false
           },
       ]
