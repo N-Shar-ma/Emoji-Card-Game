@@ -1608,7 +1608,7 @@ echo $message;`,
     {
       name: "Games",
       author: "Shyamlee-1207",
-      instructions:"The emojis on each card are a clue to different games. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the games short description in easy mode and their type in challenging mode. You can make a maximum of 3 wrong matches.",
+      instructions:"The emojis on each card are a clue to different games. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the games name in easy mode and their type in challenging mode. You can make a maximum of 3 wrong matches.",
       cards: [
           {
               name: "Temple Run",
