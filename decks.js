@@ -1604,105 +1604,108 @@ echo $message;`,
                 seenHint: false,
             }
         ]
-    }
-],
-       {
-        name: "Founder of company",
+    },
+    {
+        name: "Famous Companies",
         author: "Girlwithasmile",
-        instructions: "The emoji/s on each card are a clue for a founder of a company. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the fruit name in easy mode, and a fact of the food in the challenging mode. You can make a maximum of 3 wrong matches.",
+        instructions: "The emoji/s on each card are a clue for a company. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the company name in easy mode, and the company's founder in the challenging mode. You can make a maximum of 3 wrong matches.",
         cards:[
             {
-                name: "Bill Gates",
+                name: "Microsoft",
                 content: {
-                    secondary: "🙋‍♀️crow🧈", 
+                    primary: "🙋‍♀️",
+                    secondary: "⬛🐦🍦", 
                 },
-                hint: "Heard of Maang",
-                matchValue: "Microsoft was founded by Bill Gates in 1975",
+                hint: "Head of MAANG",
+                matchValue: "Bill Gates",
                 seenHint: false
             },
             {
-                name: "Larry Page",
+                name: "Google",
                 content: {
                     secondary: "👓🔎"
                 },
-                hint: "You use a search engine everyday",
-                matchValue: "Google was founded on September 4, 1998, by Larry Page ",
+                hint: "You use this search engine everyday",
+                matchValue: "Larry Page ",
                 seenHint: false
             },
             {
-                name: "Mark Zuckerberg",
+                name: "Meta",
                 content: {
                     secondary: "😊📖"
                 },
-                hint: "Taken over an important app you use.",
-                matchValue: "Mark Elliot Zuckerberg founded Facebook.",
+                hint: "Its former name is still the product name.",
+                matchValue: "Mark Elliot Zuckerberg",
                 seenHint: false
             },
             {
-                name: "Jeff Bezoz",
+                name: "Amazon",
                 content: {
                     secondary: "😮🔛"
                 },
                 hint: "Shop, window shop",
-                matchValue: "He is the founder, executive chairman, and former president and CEO of Amazon.",
+                matchValue: "Jeff Bezoz",
                 seenHint: false
             },
             {
-                name: "Emil Jellinek",
+                name: "Mercedes Benz",
                 content: {
                     secondary: "🌡️©️🇩🇿"
                 },
                 hint: "We all dream of owning this car",
-                matchValue: "Origin of Mercedes Benz traces back to Karl Benz and Emil Jellinek.",
+                matchValue: "Karl Benz, Gottlieb Daimler, Wilhelm Maybach and Emil Jellinek",
                 seenHint: false
             },
             {
-                name: "Jack Dorsey",
+                name: "Twitter",
                 content: {
                     secondary: "🍵w😢"
                 },
                 hint: "We all love the bird emoji",
-                matchValue: "Twitter was created by Jack Dorsey in March 2008.",
+                matchValue: "Jack Dorsey",
                 seenHint: false
             },
             {
-                name: "John Warnock",
+                name: "Adobe",
                 content: {
-                    secondary: "🅰️🐕🇧🇪"
+                    primary: "🅰️",
+                    secondary: "🐕🇧🇪"
                 },
                 hint: "PDF viewer, reader, digital signature",
-                matchValue: "Adobe was founded in December 1982 by John Warnock.",
+                matchValue: "John Warnock",
                 seenHint: false
             },
             {
-                name: "Steve Jobs",
+                name: "Apple",
                 content: {
                     secondary: "A💊"
                 },
-                hint: "- a day keeps doctor away",
-                matchValue: "Apple was founded on April 1, 1976, by Steve Jobs",
+                hint: "_ a day keeps the doctor away",
+                matchValue: "Steve Jobs",
                 seenHint: false
             },
             {
-                name: "Charles Ranlett Flint",
+                name: "IBM",
                 content: {
-                    secondary: "👁️🇧🇲"
+                    primary: "👁️",
+                    secondary: "🐝M"
                 },
                 hint: "Business machines",
-                matchValue: "The company began in 1911 founded by Charles Ranlett Flint",
+                matchValue: "Charles Ranlett Flint",
                 seenHint: false
             },
             {
-                name: "Coco Chanel",
+                name: "Chanel",
                 content: {
                     secondary: "📺📴💅"
                 },
                 hint: "French luxury fashion house",
-                matchValue: "French luxury fashion house founded in 1910 by Coco Chanel",
+                matchValue: "Coco Chanel",
                 seenHint: false
             }
         ]
     },
+]
 
 export function getShuffledDeck(category) {
   const cardDeck = decks.find((deck) => deck.name === category).cards;
