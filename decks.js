@@ -1608,7 +1608,7 @@ echo $message;`,
     {
       name: "Games",
       author: "Shyamlee-1207",
-      instructions:"The emojis on each card are a clue to different games. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the games name in easy mode and their type in challenging mode. You can make a maximum of 3 wrong matches.",
+      instructions:"The emojis on each card are a clue to different games. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the games name in easy mode and their type / character name in challenging mode. You can make a maximum of 3 wrong matches.",
       cards: [
           {
               name: "Temple Run",
@@ -1616,7 +1616,7 @@ echo $message;`,
                   secondary:"🛕 🏃‍♀️",
               },
               hint: "Zoombie run was developed in the wake of this games's success",
-              matchValue: "Endless Running game.",
+              matchValue: "Barry Boner.",
               seenHint: false
           },
           {
@@ -1625,7 +1625,7 @@ echo $message;`,
                   secondary: "⚽🥅",
               },
               hint: "Brings the world's game to life.",
-              matchValue: "Largest sports video game franchise",
+              matchValue: "Cristiano Ronaldo",
               seenHint: false
           },
           {
@@ -1661,7 +1661,7 @@ echo $message;`,
                   secondary: "🚗 🏃‍♀️",
               },
               hint: "Game revolves around driving and shooting with occasional role-playing and stealth element.",
-              matchValue: "Action Adventure Game.",
+              matchValue: "Maria Latore.",
               seenHint: false
           },
           {
@@ -1706,7 +1706,7 @@ echo $message;`,
                   secondary: "🏂 🛤️",
               },
               hint: "Main character of the game tries to escape from the inspector and his dog.",
-              matchValue: "Classic endless runner game.",
+              matchValue: "Jack.",
               seenHint: false
           },
          {
