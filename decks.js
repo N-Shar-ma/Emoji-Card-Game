@@ -1624,7 +1624,7 @@ echo $message;`,
               name: "Juventus ",
               content: {
                   primary:"👵",
-                  secondary: "Italy",
+                  secondary: "👨‍🍳🍕",
               },
               hint: "J the zebra",
               matchValue: "Ángel Di María",
