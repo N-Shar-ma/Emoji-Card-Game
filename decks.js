@@ -1604,7 +1604,117 @@ echo $message;`,
                 seenHint: false,
             }
         ]
-    },
+
+    },  {
+      name: "Football Clubs",
+      author: "Anushka Singh",
+      instructions:"The emojis on each card are a clue to your favourite football clubs. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the clubs's name in easy mode, and one fact like the name of the club, their famous players or history, or something about them in challenging mode. You can make a maximum of 3 wrong matches.",
+      cards: [
+          {
+              name: "Manchester United" ,
+              content: {
+                  primary: "🧔‍♂",
+                  secondary:"♟️ 🫂",
+              },
+              hint: "The Red Devils",
+              matchValue: "Siiuuuuuuu",
+              seenHint: false
+          },
+          {
+              name: "Juventus ",
+              content: {
+                  primary:"👵",
+                  secondary: "👨‍🍳🍕",
+              },
+              hint: "J the zebra",
+              matchValue: "Ángel Di María",
+              seenHint: false
+          },
+          {
+              name: "Paris Saint German",
+              content: {
+                  primary:"🗼 😇 ",
+                  secondary: "Ger🧔‍",
+              },
+              hint: "This is PARIS!!",
+              matchValue: "Neymar, Messi and Mbappé",
+              seenHint: false
+          },
+          {
+              name: "Arsenal",
+              content: {
+                  primary:"🔫",
+                  secondary: "👸",
+              },
+              hint: "Gabriel Martinelli",
+              matchValue: "Victory Through Harmony!!",
+              seenHint: false
+          },
+          {
+              name: "Real Madrid",
+              content: {
+                  primary:"👑",
+                  secondary: "😤rid",
+              },
+              hint: "Ronaldo's past",
+              matchValue:"El Clasico",
+              seenHint: false
+          },
+          {
+              name: "FC Bayren Munich",
+              content: {
+                  primary:"🍻",
+                  secondary: "Ger🧔‍",
+              },
+              hint: "Berni the mascot",
+              matchValue: "Thomas Muller",
+              seenHint: false
+          },
+          {
+              name: "New Castel United",
+              content: {
+                  primary:"🆕",
+                  secondary: "🏰",
+              },
+              hint: "Matt Ritchie",
+              matchValue: "Magpie the mascot",
+              seenHint: false
+          },
+          {
+              name: "Chelsea",
+              content: {
+                  primary:"🐚",
+                  secondary: "🌊",
+              },
+              hint: "Kepa Arrizabalga",
+              matchValue: "To advance!!",
+              seenHint: false
+          },
+          {
+              name: "West Brownwich Albion",
+              content: {
+                  primary:" ⬅️",
+                  secondary: "🧹",
+              },
+              hint: "Martin Kelly",
+              matchValue: "Bromwich,England",
+              seenHint: false
+          },
+          {
+              name: "Los Angeles Galaxy",
+              content: {
+                  primary:"🎥",
+                  secondary: "🌠",
+              },
+              hint: "Five MLS Cups",
+              matchValue: "Dejan Joveljic",
+              seenHint: false
+          },
+      ]
+  },
+  
+
+    
     {
         name: "Famous Companies",
         author: "Girlwithasmile",
@@ -1820,6 +1930,7 @@ echo $message;`,
             },
         ]
     },
+
 ]
 
 export function getShuffledDeck(category) {
