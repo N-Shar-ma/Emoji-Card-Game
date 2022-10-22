@@ -567,11 +567,11 @@ Display will be set to none for the hidden state using javascript.
     top: 0;
     margin: 1.2vw;
     background-color: hsla(0, 0%, 100%, 0.7);
-    font-size: 1.2rem;
+    font-size: 0;
     color: grey;
     border: 2px solid grey;
     border-radius: 5px;
-    padding: 0 3px;
+    padding: 3px;
     cursor: pointer;
     right: 0;
 }
