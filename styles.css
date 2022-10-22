@@ -8,14 +8,14 @@
 :root{
 	/*	--card-height: 160px;*/
 	--card-height: 35vh;
-	--card-height-small: 20vh;
 	/*	--card-width: 120px;*/
 	--card-width: 12vw;
-	--card-width-small : 25vw;
 	/*	--card-border-radius: 10px;*/
 	--card-border-radius: 1vw;
 	--rotation: 0deg;
 	/*	--card-shadow-color: black;*/
+
+	
 }
 
 html, body{
@@ -26,13 +26,40 @@ html, body{
 
 body{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;	
 	background-color: orange;
 }
 
+.dark {
+	background-color:#00152E;
+}
+.dark #source{
+	background-color:#014462;
+}
+.dark #score-display , .dark #hints-display{
+	background-color: #243740;
+	color:#f39c12;
+	border:2px solid #f39c12;
+}
+.dark #deck-author-display , .dark #name-shower{
+	background-color: #616161ba;
+	color:#f39c12;
+	border:2px solid #f39c12;
+}
+.dark .author , .dark .author1{
+	color:white;
+}
+.dark #landing-page{
+	background-color:rgba(255, 255, 255, 0.4) ;
+	box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.518);
+}
+.dark #title-text{
+	color:#f39c12;
+}
+
 #landing-page{
-	background-color: rgba(255, 255, 255, 0.5);
+	
 	width: 35vw;
 	height: 65vh;
 	padding: 10px;
@@ -41,6 +68,11 @@ body{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	
+}
+
+.landingPg {
+	background-color: rgba(255, 255, 255, 0.5);
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.518);
 }
 
@@ -115,15 +147,17 @@ main{
 	transform: translateX(-50%) translateY(var(--y, -100%));
 	left: 50%;
 	padding: 5px;
-	z-index: 10;
-	background-color: white;
+	z-index: 10;	
 	font-size: 1rem;
-	color: red;
-	border: 2px solid red;
 	border-top: none;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	transition: 700ms;
+}
+.nameShower{
+	background-color: white;	
+	color: red;
+	border: 2px solid red;
 }
 
 #name-shower.show{
@@ -137,26 +171,36 @@ main{
 #score-display, #hints-display, #deck-author-display {
 	position: absolute;
 	left: 75vw;
-	transform: translateX(-50%) translateY(-50%);
-	background-color: hsla(0, 0%, 100%, 0.7);
+	transform: translateX(-50%) translateY(-50%);	
 	font-size: 1.2rem;
-	color: red;
-	border: 2px solid red;
 	border-radius: 5px;
 	padding: 3px;
 	z-index: 10;
 }
 
-#deck-author-display {
-    left: 50vw;
-    top: 97vh;
+.scoreDisplay , .hintsDisplay , .deckAuthorDisplay{
+	background-color: #FFE4B3;
+	color: red;
+	border: 2px solid red;
+}
+.deckAuthorDisplay{
 	background-color: hsla(0, 0%, 100%, 1);
 }
 
-#deck-author-display a{
-    text-decoration: none;
-	color: red;
+#deck-author-display {
+    left: 50vw;
+    top: 97vh;
+		
 }
+
+#deck-author-display a{
+    text-decoration: none;	
+}
+
+.author{
+	color:red;
+}
+
 #deck-author-display a:hover{
     text-decoration: underline;
 }
@@ -183,12 +227,14 @@ main{
 	border: 5px solid var(--container-border-color);
 	border-radius: calc(2 * var(--card-border-radius));
 	box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.318);
+
+	background-color: hsl(60, 100%, 75%);
 }
 
 #source{
-	grid-template-rows: repeat(2, var(--card-height));
-	background-color: hsl(60, 100%, 75%);
+	grid-template-rows: repeat(2, var(--card-height));	
 	--container-border-color: yellow;
+	--container-border-color: #ecb365;
 }
 
 #destination{
@@ -334,7 +380,8 @@ main{
 }
 
 .back-face{
-	background-color: blue;
+		
+	background-color: #3842ff;
 	transform: rotateY(180deg);
 	justify-content: center;
 	text-align: center;
@@ -397,77 +444,6 @@ main{
 	opacity: 1;
 }
 
-
-@media screen and (max-width : 1110px){
-	#landing-page{
-		width: 45vw;
-	}
-}
-
-@media screen and (max-width : 860px){
-	#landing-page{
-		width: 65vw;
-	}
-	main{
-		flex-direction: column;
-		justify-content: center;
-		gap : 15px;
-	}
-	.card-container{
-		width: 90vw;
-		grid-template-columns: repeat(3, var(--card-width-small));
-	}
-	#source{
-		grid-template-rows: repeat(2, var(--card-height-small));
-	}
-	#destination{
-		grid-template-rows: var(--card-height-small);
-	}
-	#score-display{
-		top : 4vh;
-		left: 20vw;
-	}
-	#hints-display{
-		top : 4vh;
-	}
-	#deck-author-display{
-		width: 60vw;
-		text-align: center;
-	}
-	.card-wrapper{
-		height: 20vh;
-		width: 22vw;
-	}
-	.primary{
-		font-size: 4rem;
-	}	
-	.secondary{
-		font-size: 2.5rem;
-	}
-	#card-drop-position{
-		height: 20vh;
-		width: 22vw;
-	}
-}
-
-
-@media screen and (max-width : 520px){
-	#landing-page{
-		width: 80vw;
-	}
-	.card-wrapper{
-		height: 20vh;
-		width: 26vw;
-	}
-	.primary{
-		font-size: 3.5rem;
-	}	
-	.secondary{
-		font-size: 2rem;
-	}
-	
-}
-
 /*
 Excluding the container in its hidden state from this rule might appear
 counter-intuitive, but it is required for the animation to work correctly.
@@ -519,13 +495,18 @@ Display will be set to none for the hidden state using javascript.
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: orange;
-	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+	
+	background-image: linear-gradient(rgba(255, 255, 255, 0.301), rgba(255, 255, 255, 0.5));
 	border-radius: calc(2 * var(--card-border-radius));
 	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.318);
 	padding: 16px;
 	z-index: 1001;
 }
+
+.modalBox{
+	background-color: orange;
+}
+
 
 #modal-title {
 	font-family: 'Mali', cursive;
@@ -560,3 +541,51 @@ Display will be set to none for the hidden state using javascript.
 	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.518);
 	cursor: pointer;
 }
+
+.checkbox{
+	opacity: 0;
+	position: absolute;
+}
+
+.label{
+	background-color: black;
+	display: flex;
+	height: 24px;
+	width: 47px;
+	border-radius: 50px;
+	border:1px solid #f39c12;
+	align-items: center;
+	justify-content: space-between;
+	padding:5px;
+	position: relative;
+	cursor: pointer;
+}
+.ball{
+	width:18px;
+	height:18px;
+	background-color: white;
+	position: absolute;
+	top:2px;
+	left:3px;
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball {
+	transform: translateX(20px);	
+}
+
+.fa-moon {
+	color:#f1c40f;
+	
+}
+.fa-sun{
+	color:#f39c12;
+
+}
+.toggle{
+	
+	right: 40px;
+	top:40px;
+	position: absolute;
+}
+
