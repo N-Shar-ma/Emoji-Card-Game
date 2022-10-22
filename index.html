@@ -5,15 +5,24 @@
 	<link href="https://fonts.googleapis.com/css?family=BioRhyme:400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap" rel="stylesheet"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="script.js" type="module"></script>
 	<script src="DragAndDropTouch.js" type="module"></script>
 	<title>Emoji Cards Game</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-	<aside id="landing-page">
-		<h1 id="title-text">Emoji Card Game</h1>
+
+	<div class="toggle">
+		<input type="checkbox" class="checkbox" id="checkbox">
+		<label for="checkbox" class="label">
+			<i class="fas fa-moon"></i>
+			<i class="fas fa-sun"></i>
+			<div class="ball"></div>
+		</label>
+	</div>
+	<aside id="landing-page" class="landingPg">
+		<h1 id="title-text" >Emoji Card Game</h1>
 		<details>
 			<summary>Instructions</summary>
 			<p id="instructions">
@@ -48,10 +57,11 @@
 		<button id="play-btn">Play!</button>
 		<a id="footer" href="https://github.com/N-Shar-ma/Emoji-Card-Game"><i>leave a ⭐ on GitHub!</i></a>
 	</aside>
+	
 	<main id="game-area">
 		<button id="home-btn">back</button>
-		<div id="name-shower">The card depicted: <span></span></div>
-		<div id="score-display">Score: <span id="score">0</span></div>
+		<div id="name-shower" class="nameShower">The card depicted: <span class="author1"></span></div>
+		<div class="scoreDisplay" id="score-display">Score: <span id="score">0</span></div>
 		<div class="card-container" id="source">
 		</div>
 		<div class="card-container" id="destination">
@@ -59,8 +69,8 @@
 				<div id="matcher"></div>
 			</div>
 		</div>
-		<div id="hints-display">Hints seen: <span id="hint">0</span></div>
-		<div id="deck-author-display">Deck Created by: <a id="author" href="#" target=blank_></a></div>
+		<div id="hints-display" class="hintsDisplay">Hints seen: <span id="hint">0</span></div>
+		<div id="deck-author-display" class="deckAuthorDisplay">Deck Created by: <a id="author" class="author" href="#" target=blank_></a></div>
 	</main>
 	<template id="cardTemplate">
 		<div class="card-wrapper" draggable="true">
@@ -77,7 +87,7 @@
 	</template>
 	<div id="modal-container">
 		<div id="modal-overlay"></div>
-		<div id="modal-box">
+		<div id="modal-box" class="modalBox">
 			<h1 id="modal-title"></h1>
 			<p id="modal-content"></p>
 			<div id="modal-actions">
