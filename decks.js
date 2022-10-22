@@ -1606,6 +1606,7 @@ echo $message;`,
         ]
     },
     {
+
         name: "Famous Companies",
         author: "Girlwithasmile",
         instructions: "The emoji/s on each card are a clue for a company. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the company name in easy mode, and the company's founder in the challenging mode. You can make a maximum of 3 wrong matches.",
@@ -1705,6 +1706,122 @@ echo $message;`,
             }
         ]
     },
+
+      name: "Games",
+      author: "Shyamlee-1207",
+      instructions:"The emojis on each card are a clue to different games. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the games name in easy mode and their type / character name in challenging mode. You can make a maximum of 3 wrong matches.",
+      cards: [
+          {
+              name: "Temple Run",
+              content: {
+                  secondary:"🛕 🏃‍♀️",
+              },
+              hint: "Zoombie run was developed in the wake of this games's success",
+              matchValue: "Barry Bones",
+              seenHint: false
+          },
+          {
+              name: "Fifa",
+              content: {
+                  secondary: "⚽🥅",
+              },
+              hint: "Brings the world's game to life.",
+              matchValue: "Cristiano Ronaldo",
+              seenHint: false
+          },
+          {
+              name: "Candy Crush",
+              content: {
+                  secondary: "🍭🔨",
+              },
+              hint: "Match the three and increment the score.",
+              matchValue: "Tile matching game.",
+              seenHint: false
+          },
+          {
+              name: "Asphalt 8",
+              content: {
+                  secondary: "🚗 8",
+              },
+              hint: "First game in the series to feature a licensed soundtrack.",
+              matchValue: "Racing video game",
+              seenHint: false
+          },
+          {
+              name: "Angry Birds",
+              content: {
+                  secondary: "😡 🦜",
+              },
+              hint: "Flock of birds trying to save their eggs from green-colored pigs.",
+              matchValue:"Casual Puzzle video game",
+              seenHint: false
+          },
+          {
+              name: "Grand theft Auto",
+              content: {
+                  secondary: "🚗 🏃‍♀️",
+              },
+              hint: "Game revolves around driving and shooting with occasional role-playing and stealth element.",
+              matchValue: "Maria Latore",
+              seenHint: false
+          },
+          {
+              name: "Assassin Creed",
+              content: {
+                  secondary: "🥷 🥷",
+              },
+              hint: "Game revolves around combat, stealth and ecploration, including parkour to navigate the environment.",
+              matchValue: "Desmond Miles",
+              seenHint: false
+          },
+          {
+              name: "Minecraft",
+              content: {
+                  secondary: "🔨 🏠",
+              },
+              hint: "Players create and break various kinds of blocks in 3D worlds.",
+              matchValue: "A sandbox video game.",
+              seenHint: false
+          },
+          {
+              name: "Ludo King",
+              content: {
+                  secondary: "🎲 👑",
+              },
+              hint: "Ranked among top Android games globally in 2020.",
+              matchValue: "A record breaking casual game in the history of mobile gaming.",
+              seenHint: false
+          },
+          {
+              name: "Call Of Duty",
+              content: {
+                  secondary: "📞 👨‍💻",
+              },
+              hint: "Focused on games set in World War 2.",
+              matchValue: "First-person shooter video game franchise.",
+              seenHint: false
+          },
+         {
+              name: "Subway Surfers",
+              content: {
+                  secondary: "🏂 🛤️",
+              },
+              hint: "Main character of the game tries to escape from the inspector and his dog.",
+              matchValue: "Tricky",
+              seenHint: false
+          },
+         {
+              name: "Among Us",
+              content: {
+                  secondary: "🤫 🔫",
+              },
+              hint: "Crewmates work together to compplete tasks before one or more Imposters can kill everyone aboard.",
+              matchValue: "A party game of teamwork and betrayal",
+              seenHint: false
+          },
+      ]
+  },
+
 ]
 
 export function getShuffledDeck(category) {
