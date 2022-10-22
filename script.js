@@ -6,7 +6,7 @@ let cardObjectsDeck = []
 let currentCardObjectsDeck = [];
 let wrongCardObjectsDeck = [];
 
-let isAudioEnable = localStorage.getItem('isAudioEnable') || true;
+let isAudioEnable = localStorage.getItem('isAudioEnable') || 'true';
 
 
 const landingPage = document.getElementById("landing-page");
@@ -43,8 +43,10 @@ homeButton.addEventListener("click", goHome)
 
 audioButton.addEventListener("click", changeAudioPreference)
 
-// setting default audio preference
+
+// changeAudioPreference()
 audioButton.children[0].src = isAudioEnable == 'true' ? './speaker_on.png' : './speaker_off.png';
+
 
 function setUpGame()
 {
@@ -54,7 +56,6 @@ function setUpGame()
 	addCardsOneByOne(300)
 	updateCardDropPosition();
 	setUpCardDropPositionEventListeners();
-	changeAudioPreference()
 }
 
 function chooseDeck() {
@@ -341,14 +342,15 @@ function goHome()
 
 
 function playAudio(audioFile) {
-	if(isAudioEnable){
+	if(isAudioEnable == 'true'){
 		const audio = new Audio(audioFile);
 		audio.play();
 	}
 }
 
 function changeAudioPreference() {
-	isAudioEnable = isAudioEnable ? false : true;
+	console.log(isAudioEnable);
+	isAudioEnable = isAudioEnable == 'true' ? 'false' : 'true';
 	localStorage.setItem('isAudioEnable', isAudioEnable);
-	audioButton.children[0].src = isAudioEnable ? './speaker_on.png' : './speaker_off.png';
+	audioButton.children[0].src = isAudioEnable == 'true' ? './speaker_on.png' : './speaker_off.png';
 }
