@@ -1616,7 +1616,7 @@ echo $message;`,
                   primary: "🧔‍♂",
                   secondary:"♟️ 🫂",
               },
-              hint: "commonly referred as Man United",
+              hint: "The Red Devils",
               matchValue: "Siiuuuuuuu",
               seenHint: false
           },
@@ -1626,8 +1626,8 @@ echo $message;`,
                   primary:"👵",
                   secondary: "Italy",
               },
-              hint: "colloquially known as Juve",
-              matchValue: "Ángel Di María is the midfeilder",
+              hint: "J the zebra",
+              matchValue: "Ángel Di María",
               seenHint: false
           },
           {
@@ -1636,8 +1636,8 @@ echo $message;`,
                   primary:"🗼",
                   secondary: "😇 hitler",
               },
-              hint: "Commonly known as PSG",
-              matchValue: "Neymar is the forward",
+              hint: "This is PARIS!!",
+              matchValue: "Neymar, Messi and Mbappé",
               seenHint: false
           },
           {
@@ -1646,8 +1646,8 @@ echo $message;`,
                   primary:"🔫",
                   secondary: "Queen",
               },
-              hint: "Gabriel Martinelli is the forward player",
-              matchValue: "the club plays in the Premier League,the top flight of English football",
+              hint: "Gabriel Martinelli",
+              matchValue: "Victory Through Harmony!!",
               seenHint: false
           },
           {
@@ -1656,7 +1656,7 @@ echo $message;`,
                   primary:"👑",
                   secondary: "spin",
               },
-              hint: "Ronaldo has a huge history with this club",
+              hint: "Ronaldo's past",
               matchValue:"El Clasico",
               seenHint: false
           },
@@ -1666,8 +1666,8 @@ echo $message;`,
                   primary:"🍻",
                   secondary: "hitler",
               },
-              hint: "it is a German club, based in Munich, Bavaria",
-              matchValue: "Thomas Muller is the forward player",
+              hint: "Berni the mascot",
+              matchValue: "Thomas Muller",
               seenHint: false
           },
           {
@@ -1676,8 +1676,8 @@ echo $message;`,
                   primary:"🆕",
                   secondary: "🏰",
               },
-              hint: "Matt Ritchie is the forward player",
-              matchValue: "is an English club, based in Newcastle upon Tyne",
+              hint: "Matt Ritchie",
+              matchValue: "Magpie the mascot",
               seenHint: false
           },
           {
@@ -1686,8 +1686,8 @@ echo $message;`,
                   primary:"🐚",
                   secondary: "🌊",
               },
-              hint: "Kepa Arrizabalga is the goalkeeper",
-              matchValue: "they won their first major honour, the league championship in 1955",
+              hint: "Kepa Arrizabalga",
+              matchValue: "To advance!!",
               seenHint: false
           },
           {
@@ -1696,8 +1696,8 @@ echo $message;`,
                   primary:" ⬅️",
                   secondary: "🧹",
               },
-              hint: "Martin Kelly is midfielder",
-              matchValue: "club is based in Bromwich, West Midlands,England",
+              hint: "Martin Kelly",
+              matchValue: "Bromwich,England",
               seenHint: false
           },
           {
@@ -1706,15 +1706,15 @@ echo $message;`,
                   primary:"🎥",
                   secondary: "🌠",
               },
-              hint: "is based in Los Angeles metropolitian area",
-              matchValue: "Dejan Joveljic is forward player",
+              hint: "Five MLS Cups",
+              matchValue: "Dejan Joveljic",
               seenHint: false
           },
       ]
   },
   
 
-    },
+    
     {
         name: "Famous Companies",
         author: "Girlwithasmile",
