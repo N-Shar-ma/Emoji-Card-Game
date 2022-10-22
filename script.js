@@ -327,3 +327,11 @@ function goHome()
 {
 	location.reload();
 }
+
+
+//Dark Mode
+const checkbox=document.getElementById("checkbox");
+
+checkbox.addEventListener('change',()=>{	
+	document.body.classList.toggle("dark");	
+})
