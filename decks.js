@@ -1823,15 +1823,15 @@ echo $message;`,
   {
         name: "Food Chain",
         author: "Shyamlee-1207",
-        instructions:"The emojis on each card are a clue to different games. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the games name in easy mode and their type / character name in challenging mode. You can make a maximum of 3 wrong matches.",
+        instructions:"The emojis on each card are a clue to different games. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the Food chain name in easy mode and their establishment year / type  in challenging mode. You can make a maximum of 3 wrong matches.",
         cards: [
             {
                 name: "Starbucks",
                 content: {
                     secondary:"⭐📖",
                 },
-                hint: "Zoombie run was developed in the wake of this games's success",
-                matchValue: "Barry Bones",
+                hint: "Recntly released a drink inspired by Tik Tok.",
+                matchValue: "World's largest coffeehouse chain. ",
                 seenHint: false
             },
             {
@@ -1839,8 +1839,8 @@ echo $message;`,
                 content: {
                     secondary: "🍔👑",
                 },
-                hint: "Brings the world's game to life.",
-                matchValue: "Cristiano Ronaldo",
+                hint: "It was named before as Insta-Burger King.",
+                matchValue: "The company was founded by David Edgerton in 1953.",
                 seenHint: false
             },
             {
@@ -1848,8 +1848,8 @@ echo $message;`,
                 content: {
                     secondary: "🚇🚇",
                 },
-                hint: "Match the three and increment the score.",
-                matchValue: "Tile matching game.",
+                hint: "Worlds largest chain of fast food resturants which was established in 1965.",
+                matchValue: "It was founded by 17 year old Fred DeLuca.",
                 seenHint: false
             },
             {
@@ -1857,8 +1857,8 @@ echo $message;`,
                 content: {
                     secondary: "🥛👑",
                 },
-                hint: "First game in the series to feature a licensed soundtrack.",
-                matchValue: "Racing video game",
+                hint: "An American chain of soft serve ice cream a= owned by International Dairy Queen..",
+                matchValue: "Its logo consist of red oval figure with pointed edges adn two semi-arcs",
                 seenHint: false
             },
             {
@@ -1866,8 +1866,8 @@ echo $message;`,
                 content: {
                     secondary: "🌮🛎️",
                 },
-                hint: "Flock of birds trying to save their eggs from green-colored pigs.",
-                matchValue:"Casual Puzzle video game",
+                hint: "It's logo consists of a bell;.",
+                matchValue:"Pepsi purchased this resturant in 1978.",
                 seenHint: false
             },
             {
@@ -1875,8 +1875,8 @@ echo $message;`,
                 content: {
                     secondary: "🍕🛖",
                 },
-                hint: "Game revolves around driving and shooting with occasional role-playing and stealth element.",
-                matchValue: "Maria Latore",
+                hint: "The logo consists of the short-lived logo in white, placed on a red circle drawn much akin to a brushstroke.",
+                matchValue: "An international franchise founded in 1958 by Dan and Frank Carney.",
                 seenHint: false
             },
             {
@@ -1884,8 +1884,8 @@ echo $message;`,
                 content: {
                     secondary: "5🧑‍🦱",
                 },
-                hint: "Game revolves around combat, stealth and ecploration, including parkour to navigate the environment.",
-                matchValue: "Desmond Miles",
+                hint: "It is a burger-joint type resturant having a white text logo on a red background.",
+                matchValue: "First fast food resturant opened in 1986 in Virginia.",
                 seenHint: false
             },
             {
@@ -1893,8 +1893,8 @@ echo $message;`,
                 content: {
                     secondary: "🐼🚇",
                 },
-                hint: "Players create and break various kinds of blocks in 3D worlds.",
-                matchValue: "A sandbox video game.",
+                hint: "A largest Asian-segment resturant chain in the United States.",
+                matchValue: "An American fast food resturant which is famous for its cuisine.",
                 seenHint: false
             },
             {
@@ -1902,8 +1902,8 @@ echo $message;`,
                 content: {
                     secondary: "🌶️🌶️",
                 },
-                hint: "Ranked among top Android games globally in 2020.",
-                matchValue: "A record breaking casual game in the history of mobile gaming.",
+                hint: "One of the first chains of fast casual dining establishments.",
+                matchValue: "An American fast casual resturants specializing in bowls,and tacos.",
                 seenHint: false
             },
             {
@@ -1911,8 +1911,8 @@ echo $message;`,
                 content: {
                     secondary: "⬜🏯",
                 },
-                hint: "Focused on games set in World War 2.",
-                matchValue: "First-person shooter video game franchise.",
+                hint: "It is known for its small square hamburgers referred to as "sliders".",
+                matchValue: " An American Hamburger resturant chain.",
                 seenHint: false
             },
             {
@@ -1920,8 +1920,8 @@ echo $message;`,
                 content: {
                     secondary: "🎲🍕",
                 },
-                hint: "Main character of the game tries to escape from the inspector and his dog.",
-                matchValue: "Tricky",
+                hint: "It's logo consist of 2 rectangle, blue on the side side with 2 dots and red on the side with 1 dot.",
+                matchValue: "An American multinational pizza resturant chain.",
                 seenHint: false
             },
         ]
