@@ -1820,10 +1820,10 @@ echo $message;`,
             },
         ]
     },
-  {
+    {
         name: "Food Chain",
         author: "Shyamlee-1207",
-        instructions:"The emojis on each card are a clue to different games. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the Food chain name in easy mode and their establishment year / type  in challenging mode. You can make a maximum of 3 wrong matches.",
+        instructions:"The emojis on each card are a clue to different food chains. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the Food chain name in easy mode and their logo description in challenging mode. You can make a maximum of 3 wrong matches.",
         cards: [
             {
                 name: "Starbucks",
@@ -1831,7 +1831,7 @@ echo $message;`,
                     secondary:"⭐📖",
                 },
                 hint: "Recntly released a drink inspired by Tik Tok.",
-                matchValue: "World's largest coffeehouse chain. ",
+                matchValue: "It's logo consists of famous twin-tailed siren.",
                 seenHint: false
             },
             {
@@ -1840,7 +1840,7 @@ echo $message;`,
                     secondary: "🍔👑",
                 },
                 hint: "It was named before as Insta-Burger King.",
-                matchValue: "The company was founded by David Edgerton in 1953.",
+                matchValue: "The logo consists of a circle with the name of the franchise in the center.",
                 seenHint: false
             },
             {
@@ -1849,25 +1849,7 @@ echo $message;`,
                     secondary: "🚇🚇",
                 },
                 hint: "Worlds largest chain of fast food resturants which was established in 1965.",
-                matchValue: "It was founded by 17 year old Fred DeLuca.",
-                seenHint: false
-            },
-            {
-                name: "Dairy Queen",
-                content: {
-                    secondary: "🥛👑",
-                },
-                hint: "An American chain of soft serve ice cream a= owned by International Dairy Queen..",
-                matchValue: "Its logo consist of red oval figure with pointed edges adn two semi-arcs",
-                seenHint: false
-            },
-            {
-                name: "Taco Bell",
-                content: {
-                    secondary: "🌮🛎️",
-                },
-                hint: "It's logo consists of a bell;.",
-                matchValue:"Pepsi purchased this resturant in 1978.",
+                matchValue: "It's logo consists of company's name along with arrow which represent speed.",
                 seenHint: false
             },
             {
@@ -1875,8 +1857,26 @@ echo $message;`,
                 content: {
                     secondary: "🍕🛖",
                 },
-                hint: "The logo consists of the short-lived logo in white, placed on a red circle drawn much akin to a brushstroke.",
-                matchValue: "An international franchise founded in 1958 by Dan and Frank Carney.",
+                hint: "An international franchise founded in 1958 by Dan and Frank Carney.",
+                matchValue: "The logo consists of the short-lived logo in white, placed on a red circle drawn much akin to a brushstroke.",
+                seenHint: false
+            },
+            {
+                name: "Dairy Queen",
+                content: {
+                    secondary: "🥛👑",
+                },
+                hint: "An American chain of soft serve ice cream a= owned by International Dairy Queen.",
+                matchValue:"Its logo consist of red oval figure with pointed edges and two semi-arcs.",
+                seenHint: false
+            },
+            {
+                name: "Taco Bell",
+                content: {
+                    secondary: "🌮🛎️",
+                },
+                hint: "Pepsi purchased this resturant in 1978.",
+                matchValue: "It's logo consists of a bell",
                 seenHint: false
             },
             {
@@ -1884,8 +1884,8 @@ echo $message;`,
                 content: {
                     secondary: "5🧑‍🦱",
                 },
-                hint: "It is a burger-joint type resturant having a white text logo on a red background.",
-                matchValue: "First fast food resturant opened in 1986 in Virginia.",
+                hint: "First fast food resturant opened in 1986 in Virginia.",
+                matchValue: "It's logo consists of white text on a red background.",
                 seenHint: false
             },
             {
@@ -1894,34 +1894,7 @@ echo $message;`,
                     secondary: "🐼🚇",
                 },
                 hint: "A largest Asian-segment resturant chain in the United States.",
-                matchValue: "An American fast food resturant which is famous for its cuisine.",
-                seenHint: false
-            },
-            {
-                name: "Chipotle",
-                content: {
-                    secondary: "🌶️🌶️",
-                },
-                hint: "One of the first chains of fast casual dining establishments.",
-                matchValue: "An American fast casual resturants specializing in bowls,and tacos.",
-                seenHint: false
-            },
-            {
-                name: "White Castle",
-                content: {
-                    secondary: "⬜🏯",
-                },
-                hint: "It is known for its small square hamburgers referred to as "sliders".",
-                matchValue: " An American Hamburger resturant chain.",
-                seenHint: false
-            },
-            {
-                name: "Domino's Pizza",
-                content: {
-                    secondary: "🎲🍕",
-                },
-                hint: "It's logo consist of 2 rectangle, blue on the side side with 2 dots and red on the side with 1 dot.",
-                matchValue: "An American multinational pizza resturant chain.",
+                matchValue: "It's logo consists of a giant panda depicted in a red circle.",
                 seenHint: false
             },
         ]
