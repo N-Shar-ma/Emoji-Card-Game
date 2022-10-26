@@ -1820,6 +1820,85 @@ echo $message;`,
             },
         ]
     },
+    {
+        name: "Food Chain",
+        author: "Shyamlee-1207",
+        instructions:"The emojis on each card are a clue to different food chains. You can flip (click) the card to see an additional hint. Drag and drop a card onto the matching text clue on the right, which will be the Food chain name in easy mode and their logo description in challenging mode. You can make a maximum of 3 wrong matches.",
+        cards: [
+            {
+                name: "Starbucks",
+                content: {
+                    secondary:"⭐📖",
+                },
+                hint: "Recntly released a drink inspired by Tik Tok.",
+                matchValue: "It's logo consists of famous twin-tailed siren.",
+                seenHint: false
+            },
+            {
+                name: "Burger King",
+                content: {
+                    secondary: "🍔👑",
+                },
+                hint: "It was named before as Insta-Burger King.",
+                matchValue: "The logo consists of a circle with the name of the franchise in the center.",
+                seenHint: false
+            },
+            {
+                name: "Subway",
+                content: {
+                    secondary: "🚇🚇",
+                },
+                hint: "Worlds largest chain of fast food resturants which was established in 1965.",
+                matchValue: "It's logo consists of company's name along with arrow which represent speed.",
+                seenHint: false
+            },
+            {
+                name: "Pizza Hut",
+                content: {
+                    secondary: "🍕🛖",
+                },
+                hint: "An international franchise founded in 1958 by Dan and Frank Carney.",
+                matchValue: "The logo consists of the short-lived logo in white, placed on a red circle drawn much akin to a brushstroke.",
+                seenHint: false
+            },
+            {
+                name: "Dairy Queen",
+                content: {
+                    secondary: "🥛👑",
+                },
+                hint: "An American chain of soft serve ice cream a= owned by International Dairy Queen.",
+                matchValue:"Its logo consist of red oval figure with pointed edges and two semi-arcs.",
+                seenHint: false
+            },
+            {
+                name: "Taco Bell",
+                content: {
+                    secondary: "🌮🛎️",
+                },
+                hint: "Pepsi purchased this resturant in 1978.",
+                matchValue: "It's logo consists of a bell",
+                seenHint: false
+            },
+            {
+                name: "Five Guys",
+                content: {
+                    secondary: "5🧑‍🦱",
+                },
+                hint: "First fast food resturant opened in 1986 in Virginia.",
+                matchValue: "It's logo consists of white text on a red background.",
+                seenHint: false
+            },
+            {
+                name: "Panda Express",
+                content: {
+                    secondary: "🐼🚇",
+                },
+                hint: "A largest Asian-segment resturant chain in the United States.",
+                matchValue: "It's logo consists of a giant panda depicted in a red circle.",
+                seenHint: false
+            },
+        ]
+    },
 ]
 
 export function getShuffledDeck(category) {
